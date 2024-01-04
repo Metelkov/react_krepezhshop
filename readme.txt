@@ -1,15 +1,16 @@
-
-
 обновляем, да, есть и более корректная команда для обновления
 npm uninstall -g create-react-app
 npm install -g create-react-app
 
 
-никаких файлов не добавляет, значит и ничего не создает
-(не пишу название проекта, т.к. хочу чтобы все создалось в корне текущ директории)
-npx create-react-app
+чтобы создать проект в текущ каталоге - используем точку
+npx create-react-app .
 
 
+npm start
+
+
+это не используем
 
 вот этот далее выдаст ошибки зависимостей
 npm install react-scripts@latest
@@ -20,15 +21,15 @@ npm audit fix --force
 зависимостей стало больше
 
 
-
-
 npm init react-app
 
 
+а это нужно поставить
+npm install react-router-dom --save
 
-npm start
-
-
+после
+npm install react-scripts@latest
+npm audit fix --force
 
 
 
