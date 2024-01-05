@@ -12,14 +12,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
     height: 98%;
     border: 1px dashed blue;
 }
 
 .headLogoPic {
     display: flex;
-    width: 27%;
+    width: 20%;
     height: 98%;
     background-image:  url("../HeaderPic/logo.png");
     background-size: 100%;
@@ -28,11 +28,29 @@
 
 .headLogoName {
     display: flex;
-    width: 27%;
+    width: 70%;
     height: 98%;
     font-size: 45px;
     justify-items: center;
     align-items: center;
+}
+
+.headContentRight {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 98%;
+    border: 1px solid;
+}
+
+.headContentRightMenuSearchPic {
+
+}
+
+.headContentRightMenuSearch {
+    display: flex;
+    font-size: 20px;
+
 }
 
 .headCart {
@@ -45,27 +63,4 @@
     background-repeat: no-repeat;
     justify-items: center;
     align-items: center;
-}
-
-.headContentRight {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    height: 98%;
-    border: 1px solid;
-
-}
-
-.headContentRightMenu {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    border: 1px solid;
-}
-
-.headContentRightPhone {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    border: 1px solid;
 }

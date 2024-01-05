@@ -8,10 +8,10 @@ export const Layout  = ({children}) => {
     return (
         <>
         <div className={styles.root}>
-            <Header />
-            <HeaderMenu />
+          <HeaderMenu />
+          <Header />
 
-            <Footer />
+          <Footer />
             
         </div>
         </>
