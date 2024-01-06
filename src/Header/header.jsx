@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../Header/styles.module.css"
+import classes from "../Header/styles.module.css";
 
 
 export const Header = () => {
@@ -10,13 +10,15 @@ export const Header = () => {
                 <div className={classes.headLogoName}>Крепеж-инструмент</div>
             </div>
 
-
-            <div className={classes.headContentRight}>
-                <div className={classes.headContentRightMenuSearchPic}>
+            <div className={classes.headContentSearch}>
+                <div className={classes.headContentSearchInputBox}>
+                    <input type="search" name="" id="" className={classes.headContentSearchInputLabel}/>
                 </div>
-                <div className={classes.headContentRightMenuSearch}>
-                  поиск
+                <div className={classes.headContentSearchButtonBox}>
+                    <button>поиск</button>
                 </div>
+                {/* <div className={classes.headContentSearchPic}>
+                </div> */}
             </div>
 
 
