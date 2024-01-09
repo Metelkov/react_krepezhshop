@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "../Main/styles.module.css";
-
+import { Loader } from  '../../util/loader/loader';
 
 export const MainPage = () => {
     return (
         <div className={classes.mainPageWrapper}>
             <div className={classes.sliderSpot}>
-
+<Loader />
             </div>
             <div className={classes.cardPlace}>
                 <div className={classes.cardPlaceLeft}>
