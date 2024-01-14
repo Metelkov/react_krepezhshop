@@ -4,7 +4,7 @@ import classes from "../loader/styles..module.css";
 export const Loader = () => {
     return (
         <div className={classes.loader}>
-<span>LOADING</span>
+<p>LOADING</p>
         </div>
     )
 }

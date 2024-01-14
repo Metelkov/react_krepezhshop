@@ -5,6 +5,9 @@
     width: 90%;
     height: 100px;
     background-color: rgba(169, 169, 169, 0.9);
+    flex-wrap: nowrap;
+    align-items: center;
+  
 }
 
 .headLogo {
