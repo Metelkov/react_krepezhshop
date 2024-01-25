@@ -22,7 +22,7 @@ export const HeaderMenu = () => {
       </div>
       <div className={` ${classes.headerMenuRegister} ${classes.headerMenuLink}`}>
         <p><a href="#">вход </a></p>
-        <p>{' / '}</p>
+        <p className={classes.headerMenuRegisterSpace}>{' / '}</p>
         <p><a href="#">регистрация</a></p>
       </div>
       <div className={classes.headerMenuTel}>

@@ -9,7 +9,7 @@
     animation: rotate 3s infinite linear;
 }
 
-p {
+.loader p {
     display: flex;
     justify-content: center;
     align-items: center;
