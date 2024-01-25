@@ -3,6 +3,7 @@ npm uninstall -g create-react-app
 npm install -g create-react-app
 
 
+
 чтобы создать проект в текущ каталоге - используем точку
 npx create-react-app .
 
