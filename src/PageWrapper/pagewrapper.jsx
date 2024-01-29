@@ -1,15 +1,16 @@
 import React from "react";
 import { Header } from "../Header/header";
 import { HeaderMenu } from "../HeaderMenu/headerMenu";
-import { Root } from "../Pages/root/root";
+// import { Root } from "../Pages/root/root";
 import { Footer } from "../Footer/footer";
 
-export const PageWrapper = () => {
+export const PageWrapper = ({children}) => {
     return (
         <>
         <HeaderMenu />
         <Header />
-        <Root />
+        {/* <Root /> */}
+        {children}
         <Footer />
         </>
     )
