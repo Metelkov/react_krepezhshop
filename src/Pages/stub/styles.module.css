@@ -1,7 +1,25 @@
 .stubPageWrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
-    border: 1px solid red;
+}
+
+.stubHeader {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+.stubBodyText {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
 }
