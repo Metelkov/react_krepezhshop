@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../about/styles.module.css"
+import { aboutPageCard } from "../about/const_about"
 
 export const AboutPage = () => {
     return (
@@ -26,21 +27,32 @@ export const AboutPage = () => {
                 <div className={classes.aboutPageCardsHeader}>
                     <p>Наши преимущества</p>
                 </div>
-                <div className={classes.aboutPageCards}>
-
-                </div>
+                    <div className={classes.aboutPageCardsWrapp}>
+                        {aboutPageCard?.map((aboutCards) => (
+                            <div className={classes.aboutPageCardSingle}>
+                                <div className={classes.aboutPageCardsIcon}>
+                                    {/* {1}  тут дол быть картинка (импорт из массива) */}
+                                </div>
+                                <div className={classes.aboutPageCardSingleHead}>
+                                    {aboutCards.head}
+                                </div>
+                                <div className={classes.aboutPageCardSingleDescription}>
+                                    {aboutCards.description}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
             </div>
-
             <div className={classes.aboutPageBottomText}>
                 <div className={classes.aboutPageBottomTextHeader}>
                     <p>Работаем с юридическими и физическими лицами по всей России!</p>
                 </div>
                 <div className={classes.aboutPageBottomTextText}>
                     <p>Мы работаем по всей России как с ИП, так и с юридическими лицами. 
-                       Для получения оптового прайс-листа Вы можете позвонить по 
-                       телефону +7 (831) 218-18-08, направить запрос на электронный 
+                       <b>Для получения оптового прайс-листа Вы можете позвонить по 
+                       телефону +7 (831) 218-18-08</b>, направить запрос на электронный 
                        адрес или связаться с нами через форму обратной 
-                       связи в разделе контакты. Мы всегда открыты для сотрудничества.
+                       связи в разделе контакты. <b>Мы всегда открыты для сотрудничества.</b>
                     </p>
                 </div>
             </div>
