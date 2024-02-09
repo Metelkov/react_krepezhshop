@@ -5,6 +5,7 @@ import { MainPage } from "../Pages/Main/mainPage";
 import { Fresh } from "../Pages/fresh/fresh";
 import { AboutPage } from "../Pages/about/about";
 import { StubPage } from "../Pages/stub/stub";
+import { SliderMain } from '../util/SliderMain/slidermain'
 
 export const router = createBrowserRouter ([
     {
@@ -24,6 +25,14 @@ export const router = createBrowserRouter ([
                 path: ROUTES.about,
                 element: <AboutPage />,
             },
+            {
+                path: ROUTES.slidermain,
+                element: <SliderMain />,
+            },
+            // {
+            //     path: ROUTES.price,
+            //     element: <Price />,
+            // },
         ],
     },
 

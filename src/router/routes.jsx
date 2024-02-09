@@ -4,4 +4,7 @@ export const ROUTES = {
     fresh: '/fresh',
     about: '/about',
     stub: '/stub',
+    slidermain: '/slider',
+    // price: '../price/price.ods'
+
 }
