@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "../HeaderMenu/styles.module.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ export const HeaderMenu = () => {
     <div className={classes.headerMenu}>
       <div className={` ${classes.headerMenuAbout} ${classes.headerMenuLink}`}>
         {/* <p><a href="#">о компании</a></p> */}
-        <Link to="/about">о компании</Link>
+        <NavLink target="_blank" to="/about">о компании</NavLink>
       </div>
       <div className={` ${classes.headerMenuPrice} ${classes.headerMenuLink}`}>
         <p><a href="#">прайс-лист</a></p>
@@ -20,7 +21,7 @@ export const HeaderMenu = () => {
       </div>
       <div className={` ${classes.headerMenuDelivery} ${classes.headerMenuLink}`}>
         {/* <p><a href="#">доставка</a></p> */}
-        <Link to='/stub'>доставка</Link>
+        <NavLink to='/stub'>доставка</NavLink>
       </div>
       <div className={` ${classes.headerMenuContacts} ${classes.headerMenuLink}`}>
         <p><a href="#">контакты</a></p>

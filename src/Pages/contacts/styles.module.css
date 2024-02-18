@@ -1,0 +1,22 @@
+.contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactsTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.contactsAddress {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    font-size: 20px;
+}
+
+.contactsMap {
+    
+}

@@ -1,2 +1,3 @@
-2024/02/09-21:13:11.180 cab Creating DB /home/git_for_git/react_krepezhshop/~/.vscode-root/Service Worker/Database since it was missing.
-2024/02/09-21:13:11.186 cab Reusing MANIFEST /home/git_for_git/react_krepezhshop/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/09-21:16:01.292 10da Reusing MANIFEST /home/git_for_git/react_krepezhshop/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/09-21:16:01.292 10da Recovering log #3
+2024/02/09-21:16:01.292 10da Reusing old log /home/git_for_git/react_krepezhshop/~/.vscode-root/Service Worker/Database/000003.log 

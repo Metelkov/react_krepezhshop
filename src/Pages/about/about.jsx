@@ -3,6 +3,7 @@ import classes from "../about/styles.module.css"
 import { aboutPageCard } from "../about/const_about"
 
 export const AboutPage = () => {
+    console.log(aboutPageCard);
     return (
         <div className={classes.aboutPageWrapper}>
             <div className={classes.aboutPageTopIndent}>
@@ -31,7 +32,7 @@ export const AboutPage = () => {
                         {aboutPageCard?.map((aboutCards) => (
                             <div className={classes.aboutPageCardSingle}>
                                 <div className={classes.aboutPageCardsIcon}>
-                                    {/* {1}  тут дол быть картинка (импорт из массива) */}
+                                    <img src={aboutCards.pic} alt="" />
                                 </div>
                                 <div className={classes.aboutPageCardSingleHead}>
                                     {aboutCards.head}
@@ -45,7 +46,7 @@ export const AboutPage = () => {
             </div>
             <div className={classes.aboutPageBottomText}>
                 <div className={classes.aboutPageBottomTextHeader}>
-                    <p>Работаем с юридическими и физическими лицами по всей России!</p>
+                    <p>Работаем с юридическими и физическими лицами по всей &nbsp; &#10148; России!</p>
                 </div>
                 <div className={classes.aboutPageBottomTextText}>
                     <p>Мы работаем по всей России как с ИП, так и с юридическими лицами. 
