@@ -2,7 +2,7 @@ import React from "react";
 import classes from "../HeaderMenu/styles.module.css";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
+// import { price } from "../Pages/price/price.odt"
 
 
 export const HeaderMenu = () => {
@@ -13,11 +13,12 @@ export const HeaderMenu = () => {
         <NavLink target="_blank" to="/about">о компании</NavLink>
       </div>
       <div className={` ${classes.headerMenuPrice} ${classes.headerMenuLink}`}>
-        <p><a href="#">прайс-лист</a></p>
+        <p><a href="">прайс-лист</a></p>
         {/* <Link to="/price">прайс-лист</Link> */}
       </div>
       <div className={` ${classes.headerMenuPay} ${classes.headerMenuLink}`}>
-        <p><a href="#">оплата</a></p>
+        {/* <p><a href="#">оплата</a></p> */}
+        <NavLink to="/payment">оплата</NavLink>
       </div>
       <div className={` ${classes.headerMenuDelivery} ${classes.headerMenuLink}`}>
         {/* <p><a href="#">доставка</a></p> */}

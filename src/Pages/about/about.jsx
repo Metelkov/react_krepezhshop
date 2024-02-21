@@ -6,8 +6,8 @@ export const AboutPage = () => {
     console.log(aboutPageCard);
     return (
         <div className={classes.aboutPageWrapper}>
-            <div className={classes.aboutPageTopIndent}>
-            </div>
+            {/* <div className={classes.aboutPageTopIndent}>
+            </div> */}
             <div className={classes.aboutPageCenter}>
                 <div className={classes.aboutPageCenterHeaderText}>
                     <p>О компании</p>
