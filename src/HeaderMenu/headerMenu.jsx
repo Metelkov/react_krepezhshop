@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "../HeaderMenu/styles.module.css";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 // import { price } from "../Pages/price/price.odt"
 
@@ -9,11 +8,12 @@ export const HeaderMenu = () => {
   return (
     <div className={classes.headerMenu}>
       <div className={` ${classes.headerMenuAbout} ${classes.headerMenuLink}`}>
-        {/* <p><a href="#">о компании</a></p> */}
-        <NavLink target="_blank" to="/about">о компании</NavLink>
+        {/* <NavLink target="_blank" to="/about">о компании</NavLink> */}
+        <NavLink to="/about">о компании</NavLink>
       </div>
       <div className={` ${classes.headerMenuPrice} ${classes.headerMenuLink}`}>
         <p><a href="">прайс-лист</a></p>
+        <a id="myLink" onclick="alert('link click');">LINK 1</a>
         {/* <Link to="/price">прайс-лист</Link> */}
       </div>
       <div className={` ${classes.headerMenuPay} ${classes.headerMenuLink}`}>
@@ -25,7 +25,8 @@ export const HeaderMenu = () => {
         <NavLink to='/stub'>доставка</NavLink>
       </div>
       <div className={` ${classes.headerMenuContacts} ${classes.headerMenuLink}`}>
-        <p><a href="#">контакты</a></p>
+        {/* <p><a href="#">контакты</a></p> */}
+        <NavLink to='/Contacts'>контакты</NavLink>
       </div>
       <div className={` ${classes.headerMenuRegister} ${classes.headerMenuLink}`}>
         <p><a href="#">вход </a></p>

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./styles.module.css";
+import { SimpleMap } from "./simpleMap"
 
 
 export const Contacts = () => {
@@ -7,6 +8,7 @@ export const Contacts = () => {
         <div className={classes.contactsTitle}>
            <h1>Наши контакты</h1>
         </div>
+        <div className={classes.contactsCenterWrap}>
         <div className={classes.contactsAddress}>
             <p>Крепеж-инструмент</p>
             <p>Нижний Новгород, ул. Дьяконова, д. 30</p>
@@ -14,8 +16,9 @@ export const Contacts = () => {
             <p>+7 (831) 218-18-08</p>
         </div>
         <div className={classes.contactsMap}>
-            <p><a href="https://maps.app.goo.gl/Jm3zBhFrJNx5fC4B9">Мы на карте</a></p>
-
+            {/* <p><a href="https://maps.app.goo.gl/Jm3zBhFrJNx5fC4B9">Мы на карте</a></p> */}
+            <SimpleMap />
+        </div>
         </div>
     </div>
     )

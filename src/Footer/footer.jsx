@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../Footer/styles.module.css";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -10,7 +11,7 @@ export const Footer = () => {
               <div className={classes.footerBlockCenterTitle}>
                   <p>Крепеж-инструмент</p>
               </div>
-              <div className={classes.footerBlockCenterContent}>
+              <div className={`${classes.footerBlockCenterContent}`}>
                   <p>2024 проект на React</p>
                   <p>Lorem ipsum dolor sit amet.</p>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -26,7 +27,7 @@ export const Footer = () => {
                   <p>О компании</p>
               </div>
               <div className={`${classes.footerBlockCenterContent} ${classes.footerBlockLink}`}>
-                  <p><a href="#">О нас</a></p>
+                  <p><NavLink to='/about'>О нас</NavLink></p>
                   <p><a href="#">Статьи</a></p>
                   <p><a href="#">Бренды</a></p>
               </div>
@@ -41,9 +42,9 @@ export const Footer = () => {
                   <p>Покупателям</p>
               </div>
               <div className={` ${classes.footerBlockCenterContent} ${classes.footerBlockLink}`}>
-                  <p><a href="#">Обмен и возврат</a></p>
-                  <p><a href="#">Конфиденциальность</a></p>
-                  <p><a href="#">Частые вопросы</a></p>
+                  <p><NavLink to='/stub'>Обмен и возврат</NavLink></p>
+                  <p><NavLink to='/stub'>Конфиденциальность</NavLink></p>
+                  <p><NavLink to='/stub'>Частые вопросы</NavLink></p>
               </div>
             </div>
             <div className={` ${classes.footerBlockRightBorder} ${classes.footerBlockRightBorderDrawLine}`}></div>

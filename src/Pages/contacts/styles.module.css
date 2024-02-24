@@ -1,7 +1,17 @@
+#root {
+height: 100%;
+}
+
 .contactsWrapper {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
+}
+
+.contactsCenterWrap {
+    display: flex;
+    justify-content:space-between;
 }
 
 .contactsTitle {
@@ -12,11 +22,16 @@
 .contactsAddress {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
     height: 300px;
     font-size: 20px;
+    border: 1px solid;
 }
 
 .contactsMap {
-    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    border: 1px solid;
 }

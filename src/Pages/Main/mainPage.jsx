@@ -1,10 +1,12 @@
 import React from "react";
 import classes from "../Main/styles.module.css";
 import { Loader } from  '../../util/loader/loader';
+import { LeftMenu } from "../../LeftMenu/leftMenu";
 
 export const MainPage = () => {
     return (
         <div className={classes.mainPageWrapper}>
+        <LeftMenu />
             <div className={classes.sliderSpot}>
 <Loader />
             </div>

@@ -1,4 +1,13 @@
+@font-face {
+    font-family: "SofiaSans";
+    src: url("../Fonts/sofia_sans/static/SofiaSans-Black.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .headWrapper {
+    font-family: "SofiaSans";
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,6 +43,7 @@
     font-size: 45px;
     justify-items: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .headContentSearch {

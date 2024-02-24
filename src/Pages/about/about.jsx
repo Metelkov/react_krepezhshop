@@ -46,7 +46,7 @@ export const AboutPage = () => {
             </div>
             <div className={classes.aboutPageBottomText}>
                 <div className={classes.aboutPageBottomTextHeader}>
-                    <p>Работаем с юридическими и физическими лицами по всей &nbsp; &#10148; России!</p>
+                    <p>Работаем с юридическими и физическими лицами по всей России!</p>
                 </div>
                 <div className={classes.aboutPageBottomTextText}>
                     <p>Мы работаем по всей России как с ИП, так и с юридическими лицами. 
