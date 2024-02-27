@@ -7,6 +7,7 @@ import { StubPage } from "../Pages/stub/stub";
 import { Contacts } from "../Pages/contacts/contacts";
 import { Payment } from "../Pages/Payment/payment";
 import { SliderMain } from '../util/SliderMain/slidermain';
+import { Brends } from "../Pages/brends/brends";
 
 export const router = createBrowserRouter ([
     {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter ([
             {
                 path: ROUTES.payment,
                 element: <Payment />,
+            },
+            {
+                path: ROUTES.brends,
+                element: <Brends />,
             },
         ],
     },

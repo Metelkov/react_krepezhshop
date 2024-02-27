@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./styles.module.css";
-import { SimpleMap } from "./simpleMap"
-
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 export const Contacts = () => {
     return (<div className={classes.contactsWrapper}>
@@ -16,8 +15,17 @@ export const Contacts = () => {
             <p>+7 (831) 218-18-08</p>
         </div>
         <div className={classes.contactsMap}>
-            {/* <p><a href="https://maps.app.goo.gl/Jm3zBhFrJNx5fC4B9">Мы на карте</a></p> */}
-            <SimpleMap />
+            <YMaps>
+               <Map 
+                  width="100%"
+                  height="100%"
+                  defaultState={{ 
+                    center: [56.265447, 43.889700], 
+                    zoom: 18, 
+                  }}>
+                 <Placemark geometry={[56.265447, 43.889700]}></Placemark>
+               </Map>
+         </YMaps>
         </div>
         </div>
     </div>

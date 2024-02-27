@@ -7,5 +7,6 @@ export const ROUTES = {
     // price: '../price/price.ods'
     contacts: '/contacts',
     payment: '/payment',
+    brends: '/brends',
 
 }

@@ -3,6 +3,7 @@ import { Header } from "../Header/header";
 import { HeaderMenu } from "../HeaderMenu/headerMenu";
 // import { Root } from "../Pages/root/root";
 import { Footer } from "../Footer/footer";
+import { LeftMenu } from "../LeftMenu/leftMenu";
 import classes from "./styles.module.css"
 
 export const PageWrapper = ({children}) => {
@@ -10,7 +11,12 @@ export const PageWrapper = ({children}) => {
         <div className={classes.pageWrap}>
         <HeaderMenu />
         <Header />
-        {children}
+        <div className={classes.leftMenuAndChildWrap}>
+            <LeftMenu />
+                <div className={classes.ChildWrap}>
+                    {children}
+                </div>
+        </div>
         <Footer />
         </div>
     )

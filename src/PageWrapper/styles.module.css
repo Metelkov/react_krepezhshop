@@ -10,3 +10,13 @@
     margin: 0 auto;
     max-width: 90%;
 }
+
+.leftMenuAndChildWrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.ChildWrap {
+    display: flex;
+    width: calc(100% - 250px);
+}

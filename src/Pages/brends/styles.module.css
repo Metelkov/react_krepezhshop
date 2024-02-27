@@ -14,44 +14,28 @@
     font-display: swap;
 }
 
-#root {
-height: 100%;
-}
-
-.contactsWrapper {
+.brendWrap {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
+    height: 100%;
 }
 
-.contactsCenterWrap {
+.brendTitle {
     display: flex;
-    justify-content:space-between;
-}
-
-.contactsTitle {
+    align-items: center;
     font-family: "wixVariableBold";
-    display: flex;
+    font-size: 26px;
+    width: 100%;
+    height: 70px;
     justify-content: center;
 }
 
-.contactsAddress {
-    display: flex;
-    flex-direction: column;
-    font-family: "wixVariableMedium";
-    font-size: 18px;
-    width: 30%;
-    height: 300px;
-    font-size: 20px;
-    margin-left: 15px;
-}
-
-.contactsMap {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 500px;
+.brendContainerPic {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center;
+    justify-content: center;
+    /* width: 100px;
+    height: 200px; */
     border: 1px solid;
-    margin-bottom: 15px;
 }
