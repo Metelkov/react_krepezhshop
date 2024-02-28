@@ -13,89 +13,140 @@ export const LeftMenu = () => {
                 <div className={classes.leftMenuFasterer}>
                         <p>крепеж</p>
                 </div>
-                <div className={classes.leftMenuFastenerWrapp}>
+
+
+                 <div className={classes.leftMenuFastenerWrapp}>
                   <ul className={classes.leftMenuFastenerAnchor}>
-                      <li className={classes.leftMenuFastenerAnchorWrap}><span>Анкера</span>
+                      <li className={classes.leftMenuFastenerWrap}><span>Анкера</span>
                           <ul>
-                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
                             <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li>
+                          </li> */}
                           <li className={classes.leftMenuFastenerMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера нержавейка</NavLink>
+                            <p><NavLink to='/about'>Анкера нержавейка</NavLink></p>
+                            <p><NavLink to='/about'>Анкера оцинкованные</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Болты</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Болты рым</NavLink></p>
+                            <p><NavLink to='/about'>Болты обычные</NavLink></p>
+                            <p><NavLink to='/about'>Болты круглые</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Винты</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Винты под отвертку</NavLink></p>
+                            <p><NavLink to='/about'>Винты потайные</NavLink></p>
+                            <p><NavLink to='/about'>Винты торекс</NavLink></p>
                           </li>
                           </ul>
                       </li>
                   </ul>
 
 
-
-                  <ul className={classes.leftMenuFastenerBolt}>
-                      <li className={classes.leftMenuFastenerBoltWrap}><span>Болты</span>
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Гайки</span>
                           <ul>
-                            <li>
-                              <NavLink to='/about'>Болты рым</NavLink>
-                            </li>
-                            <li>
-                              <NavLink to='/about'>Болты обычные</NavLink>
-                            </li>
-                            <li>
-                              <NavLink to='/about'>Болты круглые</NavLink>
-                            </li>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Гайки с нейлоном</NavLink></p>
+                            <p><NavLink to='/about'>Гайки увеличенные</NavLink></p>
+                            <p><NavLink to='/about'>Гайки простые</NavLink></p>
+                          </li>
                           </ul>
                       </li>
                   </ul>
 
-
-
-
-
-                  <ul className={classes.leftMenuFastenerMenuMainList}>
-
-                    <li>Винты</li>
-                        <ul>
-                          <li>Винты под отвертку</li>
-                          <li>Винты потайные</li>
-                          <li>Винты торекс</li>
-                        </ul>
-                    <li>Гайки</li>
-                        <ul>
-                          <li>Гайки с нейлоном</li>
-                          <li>Гайки увеличенные</li>
-                          <li>Гайки простые</li>
-                        </ul>
-                  </ul>
+                  
                 </div>
                 <div className={classes.leftMenuTool}>
                         <p>инструмент</p>
                 </div>
+
+                
                 <div className={classes.leftMenuToolMenu}>
-                <ul>
-                    <li>Буры</li>
-                        <ul>
-                          <li>Буры из Германии</li>
-                          <li>Буры из Китая</li>
-                          <li>Буры из России</li>
-                        </ul>
-                    <li>Сверла</li>
-                        <ul>
-                          <li>Сверла по дереву</li>
-                          <li>Сверла по металлу</li>
-                          <li>Сверла с покрытием</li>
-                        </ul>
-                    <li>Отвертки</li>
-                        <ul>
-                          <li>Отвертки длинные</li>
-                          <li>Отвертки короткие</li>
-                          <li>Отвертки в наборе</li>
-                        </ul>
-                    <li>Гаечные ключи</li>
-                        <ul>
-                          <li>Гаечные ключи накидные</li>
-                          <li>Гаечные ключи рожковые</li>
-                          <li>Гаечные ключи разводные</li>
-                        </ul>
+
+                <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Буры</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Буры из Германии</NavLink></p>
+                            <p><NavLink to='/about'>Буры из Китая</NavLink></p>
+                            <p><NavLink to='/about'>Буры из России</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
                   </ul>
+
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Сверла</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Сверла по дереву</NavLink></p>
+                            <p><NavLink to='/about'>Сверла по металлу</NavLink></p>
+                            <p><NavLink to='/about'>Сверла с покрытием</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Отвертки</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Отвертки длинные</NavLink></p>
+                            <p><NavLink to='/about'>СОтвертки короткие</NavLink></p>
+                            <p><NavLink to='/about'>Отвертки в наборе</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <ul className={classes.leftMenuFastenerAnchor}>
+                      <li className={classes.leftMenuFastenerWrap}><span>Гаечные ключи</span>
+                          <ul>
+                          {/* <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
+                          </li> */}
+                          <li className={classes.leftMenuFastenerMenuSrcondListLi}>
+                            <p><NavLink to='/about'>Гаечные ключи накидные</NavLink></p>
+                            <p><NavLink to='/about'>Гаечные ключи рожковые</NavLink></p>
+                            <p><NavLink to='/about'>Гаечные ключи разводные</NavLink></p>
+                          </li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                 
                 </div>
               </div>
-            </div>
+           </div>
 }
