@@ -6,7 +6,7 @@ export const MainPage = () => {
     return (
         <div className={classes.mainPageWrapper}>
             <div className={classes.sliderSpot}>
-<Loader />
+{/* <Loader /> */}
             </div>
             <div className={classes.cardPlace}>
                 <div className={classes.cardPlaceLeft}>
