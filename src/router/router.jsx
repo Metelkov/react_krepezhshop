@@ -8,6 +8,8 @@ import { Contacts } from "../Pages/contacts/contacts";
 import { Payment } from "../Pages/Payment/payment";
 import { SliderMain } from '../util/SliderMain/slidermain';
 import { Brends } from "../Pages/brends/brends";
+import { AnckerNerzh } from "../Pages/fastener/anckerNerzh/anckerNerzh";
+import { AnkerZink } from "../Pages/fastener/anckerZink/ankerZink"
 
 export const router = createBrowserRouter ([
     {
@@ -38,6 +40,14 @@ export const router = createBrowserRouter ([
             {
                 path: ROUTES.brends,
                 element: <Brends />,
+            },
+            {
+                path: ROUTES.anckerNerzh,
+                element: <AnckerNerzh />,
+            },
+            {
+                path: ROUTES.ankerzink,
+                element: <AnkerZink />,
             },
         ],
     },

@@ -10,7 +10,7 @@ export const aboutPageCard = [
     {
         head: "Гарантия лучшей цены",
         description: "Мы гордимся нашими ценами, каждый день нам доверяют сотни клиентов.",
-        piv: rublePic,
+        pic: rublePic,
         id: "1000-0000-0000-0001",
     },
     {

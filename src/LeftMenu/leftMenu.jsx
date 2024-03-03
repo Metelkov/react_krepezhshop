@@ -23,8 +23,8 @@ export const LeftMenu = () => {
                             <NavLink to='/about'>Анкера оцинкованные</NavLink>
                           </li> */}
                           <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Анкера нержавейка</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Анкера оцинкованные</NavLink></p>
+                            <p><NavLink className={classes.leftMenuLinkShift} to='/anckernerzh'>Анкера нержавейка</NavLink></p>
+                            <p><NavLink className={classes.leftMenuLinkShift} to='/ankerzink'>Анкера оцинкованные</NavLink></p>
                           </li>
                           </ul>
                       </li>

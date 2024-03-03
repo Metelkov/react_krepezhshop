@@ -8,5 +8,7 @@ export const ROUTES = {
     contacts: '/contacts',
     payment: '/payment',
     brends: '/brends',
+    ankernerzh: '/anckernerzh',
+    ankerzink: '/ancker',
 
 }

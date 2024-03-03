@@ -3,7 +3,6 @@ import classes from "../about/styles.module.css"
 import { aboutPageCard } from "../about/const_about"
 
 export const AboutPage = () => {
-    console.log(aboutPageCard);
     return (
         <div className={classes.aboutPageWrapper}>
             {/* <div className={classes.aboutPageTopIndent}>
