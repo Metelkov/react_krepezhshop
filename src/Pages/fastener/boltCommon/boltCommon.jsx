@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../boltCommon/styles.module.css"
+import classes from "../boltCommon/styles.module.css";
 
 export const BoltCommon = () => {
     return (
@@ -10,4 +10,4 @@ export const BoltCommon = () => {
         
         </div>
     )
-}
+};

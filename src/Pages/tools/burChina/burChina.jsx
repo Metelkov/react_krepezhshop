@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../burChina/styles.module.css"
+import classes from "../burChina/styles.module.css";
 
 export const BurChina = () => {
     return (
@@ -10,4 +10,4 @@ export const BurChina = () => {
         
         </div>
     )
-}
+};

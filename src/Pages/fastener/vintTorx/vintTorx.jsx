@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../vintTorx/styles.module.css"
+import classes from "../vintTorx/styles.module.css";
 
 export const VintTorx = () => {
     return (
@@ -10,4 +10,4 @@ export const VintTorx = () => {
         
         </div>
     )
-}
+};

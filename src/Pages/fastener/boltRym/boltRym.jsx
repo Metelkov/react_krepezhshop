@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../boltRym/styles.module.css"
+import classes from "../boltRym/styles.module.css";
 
 export const BoltRym = () => {
     return (
@@ -10,4 +10,4 @@ export const BoltRym = () => {
         
         </div>
     )
-}
+};

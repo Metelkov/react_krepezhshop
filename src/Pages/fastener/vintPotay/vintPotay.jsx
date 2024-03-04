@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../vintPotay/styles.module.css"
+import classes from "../vintPotay/styles.module.css";
 
 export const VintPotay = () => {
     return (
@@ -10,4 +10,4 @@ export const VintPotay = () => {
         
         </div>
     )
-}
+};

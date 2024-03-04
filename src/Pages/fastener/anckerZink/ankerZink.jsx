@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../anckerZink/styles.module.css"
+import classes from "../anckerZink/styles.module.css";
 
 export const AnkerZink = () => {
     return (
@@ -10,4 +10,4 @@ export const AnkerZink = () => {
         
         </div>
     )
-}
+};

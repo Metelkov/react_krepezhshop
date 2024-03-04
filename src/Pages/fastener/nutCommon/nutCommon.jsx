@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../nutCommon/styles.module.css"
+import classes from "../nutCommon/styles.module.css";
 
 export const NutCommon = () => {
     return (
@@ -10,4 +10,4 @@ export const NutCommon = () => {
         
         </div>
     )
-}
+};

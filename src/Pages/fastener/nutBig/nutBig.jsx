@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../nutBig/styles.module.css"
+import classes from "../nutBig/styles.module.css";
 
 export const NutBig = () => {
     return (
@@ -10,4 +10,4 @@ export const NutBig = () => {
         
         </div>
     )
-}
+};

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../burGerman/styles.module.css"
+import classes from "../burGerman/styles.module.css";
 
 export const BurGerman = () => {
     return (
@@ -10,4 +10,4 @@ export const BurGerman = () => {
         
         </div>
     )
-}
+};

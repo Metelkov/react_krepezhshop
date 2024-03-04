@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../nutNeylon/styles.module.css"
+import classes from "../nutNeylon/styles.module.css";
 
 export const NutNeylon = () => {
     return (
@@ -10,4 +10,4 @@ export const NutNeylon = () => {
         
         </div>
     )
-}
+};

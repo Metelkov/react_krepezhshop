@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../burRus/styles.module.css"
+import classes from "../burRus/styles.module.css";
 
 export const BurRus = () => {
     return (
@@ -10,4 +10,4 @@ export const BurRus = () => {
         
         </div>
     )
-}
+};

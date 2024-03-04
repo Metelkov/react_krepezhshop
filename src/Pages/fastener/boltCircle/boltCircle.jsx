@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../boltCircle/styles.module.css"
+import classes from "../boltCircle/styles.module.css";
 
 export const BoltCircle = () => {
     return (
@@ -10,4 +10,4 @@ export const BoltCircle = () => {
         
         </div>
     )
-}
+};
