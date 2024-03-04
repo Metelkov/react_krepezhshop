@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 export const LeftMenu = () => {
     return <div className={classes.leftMenuWrap}>
               <div className={classes.leftMenuBlock}>
-                <div className={classes.leftMenuToMainWrap}>
-                    <div className={classes.leftMenuToMainLink}>
-                        <NavLink to="/">на главную</NavLink>
-                    </div>
-                </div>
+                {/* <div className={classes.leftMenuToMainWrap}> */}
+                    {/* <div className={classes.leftMenuToMainLink}> */}
+                        <NavLink className={classes.leftMenuToMainWrap}  to="/"><div className={classes.leftMenuToMainWrap}>на главную</div></NavLink>
+                    {/* </div> */}
+                {/* </div> */}
                 <div className={classes.leftMenuFasterer}>
                         <p>крепеж</p>
                 </div>

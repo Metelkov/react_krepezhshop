@@ -1,11 +1,13 @@
 import React from "react";
 import classes from "../Main/styles.module.css";
 import { Loader } from  '../../util/loader/loader';
+import { Slider2 } from "../../util/slider2/slider2";
 
 export const MainPage = () => {
     return (
         <div className={classes.mainPageWrapper}>
             <div className={classes.sliderSpot}>
+                <Slider2 />
 {/* <Loader /> */}
             </div>
             <div className={classes.cardPlace}>

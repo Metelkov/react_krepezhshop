@@ -13,8 +13,8 @@ export const Footer = () => {
               </div>
               <div className={`${classes.footerBlockCenterContent}`}>
                   <p>2024 проект на React</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  <p>ННГУ, ФПК</p>
+                  <p>А.С. Метельков</p>
               </div>
             </div>
             <div className={`${classes.footerBlockRightBorder} ${classes.footerBlockRightBorderDrawLine}`}></div>
