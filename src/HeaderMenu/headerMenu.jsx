@@ -106,7 +106,7 @@ export const HeaderMenu = () => {
         <div>
           <div className={classes.headerModalWrapMenuString} onClick={openModal}>Вход / регистрация</div>
           {/* <button onClick={openModal}>Вход / регистрация</button> */}
-          <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+          <Modal className={classes.modalMain} isOpen={modalIsOpen} onRequestClose={closeModal}>
             {modalContent}
           </Modal>
        </div>
