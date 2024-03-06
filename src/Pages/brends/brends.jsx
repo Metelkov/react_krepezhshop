@@ -5,31 +5,45 @@ import { brendsArr } from "../../Pages/brends/brend";
 
 export const Brends = () => {
 
-
   const [page, setPage] = useState (1);
-  const onPageClick = (e) => {
-      if (e && e.preventDefault) { e.preventDefault(); }
-         setPage(e.target.dataset.page)
-        };
 
-let limitBrendsOfPage = parseInt(page*6);
-let beginBrendsOfPage = limitBrendsOfPage - 6;
+  const onNextClick = () => {
+    setPage((prev) => prev + 1);
+  };
+
+  const onPrevClick = () => {
+    setPage((prev) => prev - 1);
+  };
+
+const limitBrendsOfPage = page * 6;
+const beginBrendsOfPage = limitBrendsOfPage - 6;
 
     return (
         <div className={classes.brendWrap}>
             <div className={classes.brendTitle}>
                 <p>Наши бренды</p>
             </div>
-
-            <div>
-                {brendsArr?.slice(beginBrendsOfPage, limitBrendsOfPage).map((showBrends) => (
-                //   <div className={classes.brendContainerPic}>
-                    <img  className={classes.brendContainerPic} src={showBrends} alt="" />
-                //   </div>
-
+            <div className={classes.brendContent}>
+                {brendsArr?.slice(beginBrendsOfPage, limitBrendsOfPage)
+                .map((showBrends, index) => (
+                    <img 
+                    key = {index}
+                    className={classes.brendContainerPic} 
+                    src={showBrends}
+                    alt="" />
                 )) }
-                <button onPageClick={onPageClick}>+</button>
-                <button onPageClick={onPageClick}>-</button>
+
+            </div>
+            <div className={classes.brendBtnWrap}>
+                <button className={classes.brendBtn} 
+                onClick={onPrevClick} 
+                disabled={page === 1}>{"<"}
+                </button>
+
+                <button className={classes.brendBtn} 
+                onClick={onNextClick} 
+                disabled={limitBrendsOfPage >= brendsArr.length}>{">"}
+                </button>
             </div>
         </div>
     );

@@ -30,6 +30,15 @@
     justify-content: center;
 }
 
+.brendContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: 900px;
+}
+
 .brendContainerPic {
     /* display: flex; */
     /* flex-direction: row; */
@@ -38,4 +47,19 @@
     /* width: 100px;
     height: 200px; */
     border: 1px solid;
+}
+
+.brendBtnWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+.brendBtn {
+    width: 50px;
+    height: 35px;
+    font-family: "wixVariableBold";
+    font-size: 25px;
 }
