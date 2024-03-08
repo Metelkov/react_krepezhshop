@@ -17,7 +17,11 @@
 .brendWrap {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    border: 1px solid;
+    flex-wrap: nowrap;
 }
 
 .brendTitle {
@@ -35,17 +39,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     width: 900px;
+    height: 500px;
 }
 
 .brendContainerPic {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center;
-    justify-content: center;
-    /* width: 100px;
-    height: 200px; */
     border: 1px solid;
 }
 
@@ -57,6 +57,7 @@
     width: 100%;
     margin: 20px 0 20px 0;
 }
+
 .brendBtn {
     width: 50px;
     height: 35px;
