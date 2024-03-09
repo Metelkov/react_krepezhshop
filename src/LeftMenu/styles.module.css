@@ -51,6 +51,11 @@
     text-decoration: none;
 }
 
+ul {
+    margin: 4px;
+}
+
+
 .leftMenuToMainWrap a{
     cursor: pointer;
     text-decoration: none;

@@ -6,13 +6,14 @@ export const Payment = () => {
     return (
         <div className={classes.paymentWrap}>
             <div className={classes.paymentTittle}>
-
+               <p>Оплатить</p>
             </div>
             <div className={classes.paymentCardInfo}>
-
+<p>visa</p>
             </div>
+            <div className={classes.paymentFormikWrap}>
             <Formik className={classes.paymentFormicStyle}>
-                <Form>
+                <Form className={classes.paymentFormWrap}>
                     <Field type="text" id="firstOctetCard" name="firstOctetCard" className={classes.paymentOctet} />
                     <ErrorMessage name="firstOctetCard" component="div" className={classes.paymentOctetErrorMessage} />
 
@@ -29,7 +30,7 @@ export const Payment = () => {
                     <button type="reset">Сбросить</button>
                 </Form>
             </Formik>
-
+            </div>
         </div>
     )
 };

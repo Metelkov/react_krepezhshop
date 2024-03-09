@@ -2,14 +2,36 @@ import React from "react";
 import classes from "./styles.module.css";
 import { NavLink } from "react-router-dom";
 
+const MenuItem = ({title, items}) => {
+  return (
+
+
+    <ul className={classes.leftMenuAnchor}>
+    <li className={classes.lleftMenuWrap}>
+        {/* <ul className={classes.leftMenuUlTitle}> <span>Сверла</span> */}
+        <div className={classes.leftMenuUlTitle}>
+          {" "} 
+        <span>Сверла</span>
+        <ul className={classes.leftMenuMenuSrcondListLi}>
+
+          {items.map(({label, to}) => (<li>
+            <NavLink className={classes.leftMenuLinkShift} to={to}>
+              {label}
+            </NavLink>
+            </li>
+          ))}
+       </ul>
+      </div>
+    </li>
+  </ul>
+
+  )
+}
+
 export const LeftMenu = () => {
     return <div className={classes.leftMenuWrap}>
               <div className={classes.leftMenuBlock}>
-                {/* <div className={classes.leftMenuToMainWrap}> */}
-                    {/* <div className={classes.leftMenuToMainLink}> */}
                         <NavLink className={classes.leftMenuToMainWrap}  to="/"><div className={classes.leftMenuToMainWrap}>на главную</div></NavLink>
-                    {/* </div> */}
-                {/* </div> */}
                 <div className={classes.leftMenuFasterer}>
                         <p>крепеж</p>
                 </div>
@@ -97,20 +119,19 @@ export const LeftMenu = () => {
                       </li>
                   </ul>
 
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Сверла</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Сверла по дереву</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Сверла по металлу</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Сверла с покрытием</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+
+
+                   <MenuItem 
+                   title="Сверла"
+                   items={[{label: 'Сверла по дереву', to: '/about'},
+                           {label: 'Сверла по металлу', to: '/about'},
+                           {label: 'Сверла с покрытием', to: '/about'},
+                    
+                   ]}/>
+
+
+
+
 
                   <ul className={classes.leftMenuAnchor}>
                       <li className={classes.lleftMenuWrap}>
