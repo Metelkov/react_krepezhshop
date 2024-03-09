@@ -2,169 +2,93 @@ import React from "react";
 import classes from "./styles.module.css";
 import { NavLink } from "react-router-dom";
 
-const MenuItem = ({title, items}) => {
-  return (
-
-
-    <ul className={classes.leftMenuAnchor}>
-    <li className={classes.lleftMenuWrap}>
-        {/* <ul className={classes.leftMenuUlTitle}> <span>Сверла</span> */}
-        <div className={classes.leftMenuUlTitle}>
-          {" "} 
-        <span>Сверла</span>
-        <ul className={classes.leftMenuMenuSrcondListLi}>
-
-          {items.map(({label, to}) => (<li>
-            <NavLink className={classes.leftMenuLinkShift} to={to}>
-              {label}
-            </NavLink>
-            </li>
-          ))}
-       </ul>
-      </div>
-    </li>
-  </ul>
-
-  )
-}
+import { MenuItemAnchor } from "./anchor";
+import { MenuItemScrews } from "./screws";
+import { MenuItemNuts } from "./nuts";
+import { MenuItemBoer } from "./boer";
+import { MenuItemDrill } from "./drill";
+import { MenuItemScrewDrv } from "./screwdrv";
+import { MenuItemSpanners } from "./spanners";
+import { MenuItemBolts } from "./bolts";
 
 export const LeftMenu = () => {
     return <div className={classes.leftMenuWrap}>
               <div className={classes.leftMenuBlock}>
-                        <NavLink className={classes.leftMenuToMainWrap}  to="/"><div className={classes.leftMenuToMainWrap}>на главную</div></NavLink>
+                        <NavLink className={classes.leftMenuToMainWrap}  to="/">
+                          <div className={classes.leftMenuToMainWrap}>на главную</div>
+                        </NavLink>
+
                 <div className={classes.leftMenuFasterer}>
                         <p>крепеж</p>
                 </div>
 
 
                  <div className={classes.lleftMenuWrapp}>
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Анкера</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/anckernerzh'>Анкера нержавейка</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/ankerzink'>Анкера оцинкованные</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+                  <MenuItemAnchor
+                   title="Болты"
+                   items={[{label: 'Болты рым', to: '/about'},
+                           {label: 'Болты обычные', to: '/about'},
+                           {label: 'Болты круглые', to: '/about'},
+                   ]}/>
 
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Болты</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Болты рым</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Болты обычные</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Болты круглые</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+                  <MenuItemBolts
+                   title="Болты"
+                   items={[{label: 'Болты рым', to: '/about'},
+                           {label: 'Болты обычные', to: '/about'},
+                           {label: 'Болты круглые', to: '/about'},
+                   ]}/>
 
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Винты</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Винты под отвертку</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Винты потайные</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Винты торекс</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+                  <MenuItemScrews
+                   title="Винты"
+                   items={[{label: 'Винты под отвертку', to: '/about'},
+                           {label: 'Винты потайные', to: '/about'},
+                           {label: 'Винты торекс', to: '/about'},
+                   ]}/>
 
-
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Гайки</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гайки с нейлоном</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гайки увеличенные</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гайки простые</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+                  <MenuItemNuts
+                   title="Гайки"
+                   items={[{label: 'Гайки с нейлоном', to: '/about'},
+                           {label: 'Гайки увеличенные', to: '/about'},
+                           {label: 'Гайки простые', to: '/about'},
+                   ]}/>
                 </div>
+
 
                 <div className={classes.leftMenuTool}>
                         <p>инструмент</p>
                 </div>
 
+
                 <div className={classes.leftMenuToolMenu}>
-                <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Буры</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Буры из Германии</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Буры из Китая</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Буры из России</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
+                   <MenuItemBoer
+                   title="Буры"
+                   items={[{label: 'Буры из Германии', to: '/about'},
+                           {label: 'Буры из Китая', to: '/about'},
+                           {label: 'Буры из России', to: '/about'},
+                   ]}/>
 
-
-
-                   <MenuItem 
+                   <MenuItemDrill 
                    title="Сверла"
                    items={[{label: 'Сверла по дереву', to: '/about'},
                            {label: 'Сверла по металлу', to: '/about'},
                            {label: 'Сверла с покрытием', to: '/about'},
-                    
                    ]}/>
 
+                   <MenuItemScrewDrv
+                   title="Отвертки"
+                   items={[{label: 'Отвертки длинные', to: '/about'},
+                           {label: 'Сотвертки короткие', to: '/about'},
+                           {label: 'Отвертки в наборе', to: '/about'},
+                   ]}/>
 
-
-
-
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Отвертки</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Отвертки длинные</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Сотвертки короткие</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Отвертки в наборе</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
-
-                  <ul className={classes.leftMenuAnchor}>
-                      <li className={classes.lleftMenuWrap}>
-                          <ul className={classes.leftMenuUlTitle}> <span>Гаечные ключи</span>
-                          {/* <li className={classes.leftMenuMenuSrcondListLi}>
-                            <NavLink to='/about'>Анкера оцинкованные</NavLink>
-                          </li> */}
-                          <li className={classes.leftMenuMenuSrcondListLi}>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гаечные ключи накидные</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гаечные ключи рожковые</NavLink></p>
-                            <p><NavLink className={classes.leftMenuLinkShift} to='/about'>Гаечные ключи разводные</NavLink></p>
-                          </li>
-                          </ul>
-                      </li>
-                  </ul>
-
-                 
+                   <MenuItemSpanners
+                   title="Гаечные ключи"
+                   items={[{label: 'Гаечные ключи накидные', to: '/about'},
+                           {label: 'Гаечные ключи рожковые', to: '/about'},
+                           {label: 'Гаечные ключи разводные', to: '/about'},
+                   ]}/>
                 </div>
+
               </div>
            </div>
 }

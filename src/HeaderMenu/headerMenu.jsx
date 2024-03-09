@@ -9,12 +9,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 export const HeaderMenu = () => {
 
-  // let pathToFile = "../Pages/price/price.odt";
-  //     downloadFile(file) {
-  //     location.href = pathToFile + file;
-  // };
-
-
   const download = async () => {
     console.log('asdasdsd')
     const response = await fetch('../Pages/price/price.odt', {
@@ -70,7 +64,6 @@ export const HeaderMenu = () => {
   );
 
 
-
   return (
     <div className={classes.headerMenu}>
       <div className={` ${classes.headerMenuAbout} ${classes.headerMenuLink}`}>
@@ -83,35 +76,26 @@ export const HeaderMenu = () => {
         <p><a href="../Pages/price/price.odt" target="_blank">прайс-лист</a></p>
         {/* <a id="myLink" onclick="alert('link click');">LINK 1</a> */}
         <a id="myLink" onClick={() => download()}> &nbsp;&nbsp;LINK___1 </a>
-
-        
         {/* <Link to="/price">прайс-лист</Link> */}
 
 
       </div>
       <div className={` ${classes.headerMenuPay} ${classes.headerMenuLink}`}>
-        {/* <p><a href="#">оплата</a></p> */}
         <NavLink to="/payment">оплата</NavLink>
       </div>
       <div className={` ${classes.headerMenuDelivery} ${classes.headerMenuLink}`}>
-        {/* <p><a href="#">доставка</a></p> */}
         <NavLink to='/stub'>доставка</NavLink>
       </div>
       <div className={` ${classes.headerMenuContacts} ${classes.headerMenuLink}`}>
-        {/* <p><a href="#">контакты</a></p> */}
         <NavLink to='/Contacts'>контакты</NavLink>
       </div>
       <div className={` ${classes.headerMenuRegister} ${classes.headerMenuLink}`}>
-        {/* <p><a href="#">вход </a></p> */}
         <div>
           <div className={classes.headerModalWrapMenuString} onClick={openModal}>Вход / регистрация</div>
-          {/* <button onClick={openModal}>Вход / регистрация</button> */}
           <Modal className={classes.modalMain} isOpen={modalIsOpen} onRequestClose={closeModal}>
             {modalContent}
           </Modal>
        </div>
-        {/* <p className={classes.headerMenuRegisterSpace}>{' / '}</p>
-        <p><a href="#">регистрация</a></p> */}
       </div>
       <div className={classes.headerMenuTel}>
         <div className={classes.headerMenuTelPic}>
