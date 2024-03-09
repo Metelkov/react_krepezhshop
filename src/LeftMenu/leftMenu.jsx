@@ -23,7 +23,7 @@ export const LeftMenu = () => {
                 </div>
 
 
-                 <div className={classes.lleftMenuWrapp}>
+                 <div className={classes.leftMenuFastenerMenu}>
                   <MenuItemAnchor
                    title="Болты"
                    items={[{label: 'Болты рым', to: '/about'},
