@@ -2,14 +2,7 @@ import React from "react";
 import classes from "./styles.module.css";
 import { NavLink } from "react-router-dom";
 
-import { MenuItemAnchor } from "./anchor";
-import { MenuItemScrews } from "./screws";
-import { MenuItemNuts } from "./nuts";
-import { MenuItemBoer } from "./boer";
-import { MenuItemDrill } from "./drill";
-import { MenuItemScrewDrv } from "./screwdrv";
-import { MenuItemSpanners } from "./spanners";
-import { MenuItemBolts } from "./bolts";
+import { MenuItem } from "./menuitem";
 
 export const LeftMenu = () => {
     return <div className={classes.leftMenuWrap}>
@@ -24,28 +17,28 @@ export const LeftMenu = () => {
 
 
                  <div className={classes.leftMenuFastenerMenu}>
-                  <MenuItemAnchor
+                  <MenuItem
                    title="Болты"
                    items={[{label: 'Болты рым', to: '/about'},
                            {label: 'Болты обычные', to: '/about'},
                            {label: 'Болты круглые', to: '/about'},
                    ]}/>
 
-                  <MenuItemBolts
+                  <MenuItem
                    title="Болты"
                    items={[{label: 'Болты рым', to: '/about'},
                            {label: 'Болты обычные', to: '/about'},
                            {label: 'Болты круглые', to: '/about'},
                    ]}/>
 
-                  <MenuItemScrews
+                  <MenuItem
                    title="Винты"
                    items={[{label: 'Винты под отвертку', to: '/about'},
                            {label: 'Винты потайные', to: '/about'},
                            {label: 'Винты торекс', to: '/about'},
                    ]}/>
 
-                  <MenuItemNuts
+                  <MenuItem
                    title="Гайки"
                    items={[{label: 'Гайки с нейлоном', to: '/about'},
                            {label: 'Гайки увеличенные', to: '/about'},
@@ -60,28 +53,28 @@ export const LeftMenu = () => {
 
 
                 <div className={classes.leftMenuToolMenu}>
-                   <MenuItemBoer
+                   <MenuItem
                    title="Буры"
                    items={[{label: 'Буры из Германии', to: '/about'},
                            {label: 'Буры из Китая', to: '/about'},
                            {label: 'Буры из России', to: '/about'},
                    ]}/>
 
-                   <MenuItemDrill 
+                   <MenuItem 
                    title="Сверла"
                    items={[{label: 'Сверла по дереву', to: '/about'},
                            {label: 'Сверла по металлу', to: '/about'},
                            {label: 'Сверла с покрытием', to: '/about'},
                    ]}/>
 
-                   <MenuItemScrewDrv
+                   <MenuItem
                    title="Отвертки"
                    items={[{label: 'Отвертки длинные', to: '/about'},
                            {label: 'Сотвертки короткие', to: '/about'},
                            {label: 'Отвертки в наборе', to: '/about'},
                    ]}/>
 
-                   <MenuItemSpanners
+                   <MenuItem
                    title="Гаечные ключи"
                    items={[{label: 'Гаечные ключи накидные', to: '/about'},
                            {label: 'Гаечные ключи рожковые', to: '/about'},
