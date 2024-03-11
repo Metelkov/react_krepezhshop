@@ -1,17 +1,19 @@
 @font-face {
-    font-family: "wixVariableBold";
-    src: url("../../Fonts/wixVariable/static/WixMadeforDisplay-Bold.ttf") format("truetype"); 
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "wixVariableBold";
+  src: url("../../Fonts/wixVariable/static/WixMadeforDisplay-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "wixVariableMedium";
-    src: url("../../Fonts/wixVariable/static/WixMadeforDisplay-Medium.ttf") format("truetype"); 
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "wixVariableMedium";
+  src: url("../../Fonts/wixVariable/static/WixMadeforDisplay-Medium.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* #root {
@@ -20,57 +22,54 @@
 } */
 
 .paymentWrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* flex-grow: 1; */
-    min-height: 100%;
-    width: 100%;
-    border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-grow: 1; */
+  min-height: 100%;
+  width: 100%;
+  border: 1px solid;
 }
 
 .paymentTittle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-    font-family: "wixVariableBold";
-    font-size: 26px;
-} 
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-family: "wixVariableBold";
+  font-size: 26px;
+}
 
 .paymentCardInfo {
-    display: flex;
-    align-items: center;  
-    width: 60%;
-    height: 90px;
-    border: 1px solid green;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 90px;
+  border: 1px solid green;
 }
 
 .paymentFormikWrap {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
-    border: 1px solid rgb(84, 68, 141);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  border: 1px solid rgb(84, 68, 141);
 }
 
 .paymentFormicStyle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px double brown;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px double brown;
 }
 
 .paymentFormWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 90px;
-    border: 1px dashed yellowgreen;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90px;
+  border: 1px dashed yellowgreen;
 }
