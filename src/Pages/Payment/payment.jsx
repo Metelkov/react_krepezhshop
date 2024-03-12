@@ -65,6 +65,24 @@ export const Payment = () => {
               name="firstOctetCard"
               className={classes.paymentOctet}
             />
+            {({ field, meta }) => (
+              <div>
+                <input
+                  {...field}
+                  ref={inputRef}
+                  onChange={(e) => {
+                    if (e.target.value === "4242") {
+                      alert("visa");
+                    } else {
+                      field.onChange(e);
+                    }
+                  }}
+                />
+                {meta.touched && meta.error && (
+                  <div className="error">{meta.error}</div>
+                )}
+              </div>
+            )}
             <ErrorMessage
               name="firstOctetCard"
               component="div"

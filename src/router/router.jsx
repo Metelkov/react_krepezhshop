@@ -1,55 +1,59 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Root } from '../Pages/root/root';
+import { Root } from "../Pages/root/root";
 import { ROUTES } from "./routes";
 import { MainPage } from "../Pages/Main/mainPage";
 import { AboutPage } from "../Pages/about/about";
 import { StubPage } from "../Pages/stub/stub";
 import { Contacts } from "../Pages/contacts/contacts";
 import { Payment } from "../Pages/Payment/payment";
-import { SliderMain } from '../util/SliderMain/slidermain';
+import { SliderMain } from "../util/SliderMain/slidermain";
 import { Brends } from "../Pages/brends/brends";
 import { AnckerNerzh } from "../Pages/fastener/anckerNerzh/anckerNerzh";
-import { AnkerZink } from "../Pages/fastener/anckerZink/ankerZink"
+import { AnkerZink } from "../Pages/fastener/anckerZink/ankerZink";
+import { Bolts } from "../Pages/fastener/bolt/bolts";
 
-export const router = createBrowserRouter ([
-    {
-        path: ROUTES.Root,
-        element: <Root />,
-        children: [
-            {index: true, element: <MainPage />},
-            {
-                path: ROUTES.stub,
-                element: <StubPage />,
-            },            
-            {
-                path: ROUTES.about,
-                element: <AboutPage />,
-            },
-            {
-                path: ROUTES.slidermain,
-                element: <SliderMain />,
-            },
-            {
-                path: ROUTES.contacts,
-                element: <Contacts />,
-            },
-            {
-                path: ROUTES.payment,
-                element: <Payment />,
-            },
-            {
-                path: ROUTES.brends,
-                element: <Brends />,
-            },
-            {
-                path: ROUTES.anckerNerzh,
-                element: <AnckerNerzh />,
-            },
-            {
-                path: ROUTES.ankerzink,
-                element: <AnkerZink />,
-            },
-        ],
-    },
-
+export const router = createBrowserRouter([
+  {
+    path: ROUTES.Root,
+    element: <Root />,
+    children: [
+      { index: true, element: <MainPage /> },
+      {
+        path: ROUTES.stub,
+        element: <StubPage />,
+      },
+      {
+        path: ROUTES.about,
+        element: <AboutPage />,
+      },
+      {
+        path: ROUTES.slidermain,
+        element: <SliderMain />,
+      },
+      {
+        path: ROUTES.contacts,
+        element: <Contacts />,
+      },
+      {
+        path: ROUTES.payment,
+        element: <Payment />,
+      },
+      {
+        path: ROUTES.brends,
+        element: <Brends />,
+      },
+      {
+        path: ROUTES.anckerNerzh,
+        element: <AnckerNerzh />,
+      },
+      {
+        path: ROUTES.ankerzink,
+        element: <AnkerZink />,
+      },
+      {
+        path: ROUTES.bolts,
+        element: <Bolts />,
+      },
+    ],
+  },
 ]);
