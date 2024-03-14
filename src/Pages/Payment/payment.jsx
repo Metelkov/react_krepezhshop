@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./styles.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { number, object } from "yup";
 import { InputMask, useMask } from "@react-input/mask";
+import { calculateCardType } from "./cardWatch";
 
 const schema = object().shape({
   firstOctetCard: number().default(undefined),
@@ -13,6 +14,8 @@ export const Payment = () => {
     mask: "____ ____ ____ ____",
     replacement: { _: /\d/ },
   });
+
+  const [cardType, setCardType] = useState("");
 
   return (
     <div className={classes.paymentWrap}>
@@ -28,7 +31,7 @@ export const Payment = () => {
           initialValues={schema.default()}
           className={classes.paymentFormicStyle}
           onSubmit={(valOfInput) => {
-            console.log(valOfInput);
+            // console.log(valOfInput);
           }}
           //   const valOfInputToStr = Object.values(valOfInput) //вероятно нужно куда то вынести и тут не писать и вообще создать массивы по которым будут определяться значения
           //     .join() //оказалось - переписал по своему
@@ -44,47 +47,39 @@ export const Payment = () => {
           //     div.innerHTML = "Avia";
           //     document.getElementById("cardIdentificatorShow").append(div);
           //   }
-          //   if (valOfInputToStr.substr(1, 1) == 3) {
-          //     const div = document.createElement("div");
-          //     div.innerHTML = "American Express";
-          //     document.getElementById("cardIdentificatorShow").append(div);
-          //     console.log("American Express");
-          //   }
-          //   if (valOfInputToStr.substr(1, 1) == 4) {
-          //     const div = document.createElement("div");
-          //     div.innerHTML = "visa";
-          //     document.getElementById("cardIdentificatorShow").append(div);
-          //     console.log("visa");
-          //   }
-          //   console.log(valOfInputToStr);
-          // }}
         >
           <Form className={classes.paymentFormWrap}>
             <Field
-              innerRef={inputRef}
               type="text"
               id="firstOctetCard"
               name="firstOctetCard"
               className={classes.paymentOctet}
-            />
-            {({ field, form: { setError }, meta }) => (
-              <div>
-                <input
-                  {...field}
-                  ref={inputRef}
-                  onChange={(e) => {
-                    if (e.target.value === "4242") {
-                      alert("visa");
-                    } else {
-                      field.onChange(e);
-                    }
-                  }}
-                />
-                {meta.touched && meta.error && (
-                  <div className="error">{meta.error}</div>
-                )}
-              </div>
-            )}
+            >
+              {({ field, form: { setError }, meta }) => {
+                return (
+                  <div>
+                    <div>{cardType}</div>
+                    <input
+                      {...field}
+                      ref={inputRef}
+                      onChange={(e) => {
+                        const cardType = calculateCardType(e.target.value);
+                        setCardType(cardType);
+
+                        // if (e.target.value === "4242") {
+                        //   alert("visa");
+                        // } else {
+                        //   field.onChange(e);
+                        // }
+                      }}
+                    />
+                    {meta.touched && meta.error && (
+                      <div className="error">{meta.error}</div>
+                    )}
+                  </div>
+                );
+              }}
+            </Field>
             <ErrorMessage
               name="firstOctetCard"
               component="div"
