@@ -23,6 +23,8 @@ export const calculateBank = (value) => {
       return "Совкомбанк";
     case 276:
       return "Сбербанк";
+    case 202:
+      return "Сбербанк";
     case 132:
       return "Всероссийский Банк Развития Регионов";
     case 279:

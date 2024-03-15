@@ -5,6 +5,7 @@ import { number, object } from "yup";
 import { InputMask, useMask } from "@react-input/mask";
 import { calculateCardType } from "./cardWatch";
 import { calculateBank } from "./bankWatch";
+import { algorithmLun } from "./lun";
 
 const schema = object().shape({
   firstOctetCard: number().default(undefined),
@@ -18,6 +19,7 @@ export const Payment = () => {
 
   const [cardType, setCardType] = useState("");
   const [bankType, setBankType] = useState("");
+  const [cardDigit, setCardDigit] = useState("");
 
   return (
     <div className={classes.paymentWrap}>
@@ -28,9 +30,11 @@ export const Payment = () => {
         <div className={classes.paymentCardInfoCredentals}>
           <span>{cardType}</span>
         </div>
-
         <div className={classes.paymentCardInfoCredentals}>
           <span>{bankType}</span>
+          <div className={classes.paymentCardInfoCredentals}>
+            <span>{bankType}</span>
+          </div>
         </div>
       </div>
       <div className={classes.paymentFormikWrap}>
@@ -52,7 +56,6 @@ export const Payment = () => {
               {({ field, form: { setError }, meta }) => {
                 return (
                   <div>
-                    {/* <div>{cardType}</div> */}
                     <input
                       {...field}
                       ref={inputRef}
@@ -63,11 +66,12 @@ export const Payment = () => {
                         const bankType = calculateBank(e.target.value);
                         setBankType(bankType);
 
-                        // if (e.target.value === "4242") {
-                        //   alert("visa");
-                        // } else {
-                        //   field.onChange(e);
-                        // }
+                        const cardDigit = algorithmLun(e.target.value);
+                        setCardDigit(bankType);
+
+                        //
+                        //
+                        //
                       }}
                     />
                     {meta.touched && meta.error && (
