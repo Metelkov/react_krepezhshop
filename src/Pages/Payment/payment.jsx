@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { number, object } from "yup";
 import { InputMask, useMask } from "@react-input/mask";
 import { calculateCardType } from "./cardWatch";
+import { calculateBank } from "./bankWatch";
 
 const schema = object().shape({
   firstOctetCard: number().default(undefined),
@@ -16,6 +17,7 @@ export const Payment = () => {
   });
 
   const [cardType, setCardType] = useState("");
+  const [bankType, setBankType] = useState("");
 
   return (
     <div className={classes.paymentWrap}>
@@ -23,7 +25,13 @@ export const Payment = () => {
         <p>Оплатить</p>
       </div>
       <div id="cardIdentificatorShow" className={classes.paymentCardInfo}>
-        <p></p>
+        <div className={classes.paymentCardInfoCredentals}>
+          <span>{cardType}</span>
+        </div>
+
+        <div className={classes.paymentCardInfoCredentals}>
+          <span>{bankType}</span>
+        </div>
       </div>
       <div className={classes.paymentFormikWrap}>
         <Formik
@@ -33,20 +41,6 @@ export const Payment = () => {
           onSubmit={(valOfInput) => {
             // console.log(valOfInput);
           }}
-          //   const valOfInputToStr = Object.values(valOfInput) //вероятно нужно куда то вынести и тут не писать и вообще создать массивы по которым будут определяться значения
-          //     .join() //оказалось - переписал по своему
-          //     .replaceAll(" ", "");
-          //   if (valOfInputToStr.length != 16) {
-          //     console.log("не все цифры введены");
-          //     document.getElementById("submitbtn").disabled = true; //а обратно не вернем - нужно отслеживать в реальн времени
-          //   }
-
-          //   if (valOfInputToStr.substr(1, 1) == 1 || 2) {
-          //     console.log("avia");
-          //     const div = document.createElement("div"); //название карты дуюдируется, не стирается при нажатие на Оплатить
-          //     div.innerHTML = "Avia";
-          //     document.getElementById("cardIdentificatorShow").append(div);
-          //   }
         >
           <Form className={classes.paymentFormWrap}>
             <Field
@@ -58,13 +52,16 @@ export const Payment = () => {
               {({ field, form: { setError }, meta }) => {
                 return (
                   <div>
-                    <div>{cardType}</div>
+                    {/* <div>{cardType}</div> */}
                     <input
                       {...field}
                       ref={inputRef}
                       onChange={(e) => {
                         const cardType = calculateCardType(e.target.value);
                         setCardType(cardType);
+
+                        const bankType = calculateBank(e.target.value);
+                        setBankType(bankType);
 
                         // if (e.target.value === "4242") {
                         //   alert("visa");
