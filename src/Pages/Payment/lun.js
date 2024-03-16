@@ -21,7 +21,9 @@ export const algorithmLun = (value) => {
   console.log("stroka l " + stroka.length);
 
   for (let i = 0; i < stroka.length; i++) {
-    arrAll.push(stroka[i]);
+    if (stroka[i] != " ") {
+      arrAll.push(stroka[i]);
+    }
   }
 
   //   console.log("str= " + stroka);
