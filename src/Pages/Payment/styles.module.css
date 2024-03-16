@@ -47,9 +47,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 70%;
   height: 90px;
-  border: 1px solid green;
 }
 
 .paymentCardInfoCredentals {
@@ -83,4 +83,14 @@
   width: 80%;
   height: 90px;
   border: 1px dashed yellowgreen;
+}
+
+.inputForm {
+  font-family: "wixVariableMedium";
+  font-size: 26px;
+}
+.btnForm {
+  font-family: "wixVariableMedium";
+  font-size: 26px;
+  margin: 0 10px 0 10px;
 }

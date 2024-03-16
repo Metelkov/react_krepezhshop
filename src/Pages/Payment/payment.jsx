@@ -32,9 +32,9 @@ export const Payment = () => {
         </div>
         <div className={classes.paymentCardInfoCredentals}>
           <span>{bankType}</span>
-          <div className={classes.paymentCardInfoCredentals}>
-            <span>{bankType}</span>
-          </div>
+        </div>
+        <div className={classes.paymentCardInfoCredentals}>
+          <span>{cardDigit}</span>
         </div>
       </div>
       <div className={classes.paymentFormikWrap}>
@@ -67,12 +67,13 @@ export const Payment = () => {
                         setBankType(bankType);
 
                         const cardDigit = algorithmLun(e.target.value);
-                        setCardDigit(bankType);
+                        setCardDigit(cardDigit);
 
                         //
                         //
                         //
                       }}
+                      className={classes.inputForm}
                     />
                     {meta.touched && meta.error && (
                       <div className="error">{meta.error}</div>
@@ -87,10 +88,12 @@ export const Payment = () => {
               className={classes.paymentOctetErrorMessage}
             />
 
-            <button id="submitbtn" type="submit">
+            <button id="submitbtn" type="submit" className={classes.btnForm}>
               Оплатить
             </button>
-            <button type="reset">Сбросить</button>
+            <button type="reset" className={classes.btnForm}>
+              Сбросить
+            </button>
           </Form>
         </Formik>
       </div>
