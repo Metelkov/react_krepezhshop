@@ -21,15 +21,12 @@ export const algorithmLun = (value) => {
   console.log("stroka l " + stroka.length);
 
   for (let i = 0; i < stroka.length; i++) {
-    console.log("i = " + i);
-    arrAll.push(i);
-    console.log(arrAll[0]);
-    console.log(arrAll[2]);
+    arrAll.push(stroka[i]);
   }
 
   //   console.log("str= " + stroka);
   //   console.log("ar = " + arrAll);
   //   console.log("odd = " + arrOdd);
   //   console.log("at= " + arrAll.at(2));
-  //   console.log("[]= " + arrAll[2]);
+  console.log("[]= " + arrAll);
 };
