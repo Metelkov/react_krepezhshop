@@ -8,9 +8,14 @@ import { Contacts } from "../Pages/contacts/contacts";
 import { Payment } from "../Pages/Payment/payment";
 import { SliderMain } from "../util/SliderMain/slidermain";
 import { Brends } from "../Pages/brends/brends";
-import { AnckerNerzh } from "../Pages/fastener/anckerNerzh/anckerNerzh";
-import { AnkerZink } from "../Pages/fastener/anckerZink/ankerZink";
+import { Anckers } from "../Pages/fastener/ancker/anckers";
 import { Bolts } from "../Pages/fastener/bolt/bolts";
+import { Nuts } from "../Pages/fastener/nut/nuts";
+import { Vints } from "../Pages/fastener/vint/vints";
+import { Burs } from "../Pages/tools/bur/burs";
+import { Gaechs } from "../Pages/tools/gaech/gaechs";
+import { Otvertks } from "../Pages/tools/otvertk/otvertks";
+import { Sverls } from "../Pages/tools/sverl/sverls";
 
 export const router = createBrowserRouter([
   {
@@ -43,16 +48,36 @@ export const router = createBrowserRouter([
         element: <Brends />,
       },
       {
-        path: ROUTES.anckerNerzh,
-        element: <AnckerNerzh />,
-      },
-      {
-        path: ROUTES.ankerzink,
-        element: <AnkerZink />,
+        path: ROUTES.anckers,
+        element: <Anckers />,
       },
       {
         path: ROUTES.bolts,
         element: <Bolts />,
+      },
+      {
+        path: ROUTES.nuts,
+        element: <Nuts />,
+      },
+      {
+        path: ROUTES.vints,
+        element: <Vints />,
+      },
+      {
+        path: ROUTES.burs,
+        element: <Burs />,
+      },
+      {
+        path: ROUTES.gaechs,
+        element: <Gaechs />,
+      },
+      {
+        path: ROUTES.otvertks,
+        element: <Otvertks />,
+      },
+      {
+        path: ROUTES.sverls,
+        element: <Sverls />,
       },
     ],
   },

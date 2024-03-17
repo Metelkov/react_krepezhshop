@@ -20,35 +20,35 @@ export const LeftMenu = () => {
           <MenuItem
             title="Болты"
             items={[
-              { label: "Болты рым", to: `${ROUTES.bolts}?id=1` },
-              { label: "Болты обычные", to: "/bolts?type=2" },
-              { label: "Болты круглые", to: "/bolts?type=3" },
+              { label: "Болты рым", to: `${ROUTES.bolts}?type=1` },
+              { label: "Болты обычные", to: `${ROUTES.bolts}?type=2` },
+              { label: "Болты круглые", to: `${ROUTES.bolts}?type=3` },
             ]}
           />
 
           <MenuItem
             title="Анкера"
             items={[
-              { label: "Анкер из нержавейки", to: "/about" },
-              { label: "Анкер оцинкованный", to: "/about" },
+              { label: "Анкер из нержавейки", to: `${ROUTES.anckers}?type=1` },
+              { label: "Анкер оцинкованный", to: `${ROUTES.anckers}?type=2` },
             ]}
           />
 
           <MenuItem
             title="Винты"
             items={[
-              { label: "Винты под отвертку", to: "/about" },
-              { label: "Винты потайные", to: "/about" },
-              { label: "Винты торекс", to: "/about" },
+              { label: "Винты под отвертку", to: `${ROUTES.vints}?type=1` },
+              { label: "Винты потайные", to: `${ROUTES.vints}?type=2` },
+              { label: "Винты торекс", to: `${ROUTES.vints}?type=3` },
             ]}
           />
 
           <MenuItem
             title="Гайки"
             items={[
-              { label: "Гайки с нейлоном", to: "/about" },
-              { label: "Гайки увеличенные", to: "/about" },
-              { label: "Гайки простые", to: "/about" },
+              { label: "Гайки с нейлоном", to: "/nuts?type=1" },
+              { label: "Гайки увеличенные", to: "/nuts?type=2" },
+              { label: "Гайки простые", to: "/nuts?type=3" },
             ]}
           />
         </div>

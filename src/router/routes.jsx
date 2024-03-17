@@ -7,7 +7,14 @@ export const ROUTES = {
   contacts: "/contacts",
   payment: "/payment",
   brends: "/brends",
-  ankernerzh: "/anckernerzh",
-  ankerzink: "/ancker",
+  anckers: "/anckers",
   bolts: "/bolts",
+
+  nuts: "/nuts",
+
+  vints: "/vints",
+  burs: "/burs",
+  gaechs: "/gaechs",
+  otvertks: "/otvertks",
+  sverls: "/sverls",
 };
