@@ -33,7 +33,11 @@ export const Bolts = () => {
         <p>Болты</p>
       </div>
       {bolts.map(({ name }) => (
-        <p key={name}>{name}</p>
+        <div key={name}>
+          <div>{name}</div>
+          <div>{description}</div>
+          <div>{price}</div>
+        </div>
       ))}
     </div>
   );
