@@ -98,7 +98,7 @@ export const Payment = () => {
             <button
               id="submitbtn"
               type="submit"
-              disabled="disabled"
+              disabled={disabledBtnForm}
               className={`${classes.btnForm} ${classes.disableEnable}`}
             >
               Оплатить
