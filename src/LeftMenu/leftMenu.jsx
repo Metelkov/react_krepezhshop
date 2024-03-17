@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./styles.module.css";
 import { NavLink } from "react-router-dom";
-
+import { ROUTES } from "../router/routes";
 import { MenuItem } from "./menuitem";
 
 export const LeftMenu = () => {
@@ -20,9 +20,9 @@ export const LeftMenu = () => {
           <MenuItem
             title="Болты"
             items={[
-              { label: "Болты рым", to: "/bolts?id=1" },
-              { label: "Болты обычные", to: "/bolts?id=2" },
-              { label: "Болты круглые", to: "/about" },
+              { label: "Болты рым", to: `${ROUTES.bolts}?id=1` },
+              { label: "Болты обычные", to: "/bolts?type=2" },
+              { label: "Болты круглые", to: "/bolts?type=3" },
             ]}
           />
 

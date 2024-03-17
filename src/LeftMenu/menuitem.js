@@ -9,7 +9,7 @@ export const MenuItem = ({ title, items }) => {
           {title}
           <ul className={classes.leftMenuMenuSrcondListLi}>
             {items.map(({ label, to }) => (
-              <li>
+              <li key={label}>
                 <NavLink className={classes.leftMenuLinkShift} to={to}>
                   {label}
                 </NavLink>
