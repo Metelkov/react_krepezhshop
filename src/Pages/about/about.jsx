@@ -29,8 +29,8 @@ export const AboutPage = () => {
           <p>Наши преимущества</p>
         </div>
         <div className={classes.aboutPageCardsWrapp}>
-          {aboutPageCard?.map((aboutCards) => (
-            <div className={classes.aboutPageCardSingle} key={aboutCards}>
+          {aboutPageCard?.map((aboutCards, index) => (
+            <div className={classes.aboutPageCardSingle} key={index}>
               <div className={classes.aboutPageCardsIcon}>
                 <img src={aboutCards.pic} alt="" />
               </div>

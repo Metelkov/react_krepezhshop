@@ -20,9 +20,9 @@ export const LeftMenu = () => {
           <MenuItem
             title="Болты"
             items={[
-              { label: "Болты рым", to: `${ROUTES.bolts}?type=1` },
-              { label: "Болты обычные", to: `${ROUTES.bolts}?type=2` },
-              { label: "Болты круглые", to: `${ROUTES.bolts}?type=3` },
+              { label: "Болты рым", to: `${ROUTES.bolts}?type=rym` },
+              { label: "Болты обычные", to: `${ROUTES.bolts}?type=common` },
+              { label: "Болты torx", to: `${ROUTES.bolts}?type=torx` },
             ]}
           />
 

@@ -11,9 +11,9 @@ export const Bolts = () => {
   const [search] = useSearchParams();
 
   useEffect(() => {
+    const type = search.get("type");
     setIsLoading(true);
-    fetch(`https://6e4058f6f7746d76.mokky.dev/bolts`)
-      /*?type=id:1*/
+    fetch(`https://6e4058f6f7746d76.mokky.dev/bolts?type=${type}`)
       .then((responce) => responce.json())
       .then((data) => setBolts(data))
       .catch((e) => {
@@ -23,22 +23,41 @@ export const Bolts = () => {
         setIsLoading(false);
       });
   }, []);
-  if (isLoading) return <Loader />;
+  if (isLoading)
+    return (
+      <div className={classes.loader}>
+        <Loader />;
+      </div>
+    );
 
   if (!bolts) return <h2>Товар не найден</h2>;
 
   return (
-    <div className={classes.boltCircleWrap}>
-      <div className={classes.boltCircleTitle}>
+    <div className={classes.boltWrap}>
+      <div className={classes.boltTitle}>
         <p>Болты</p>
       </div>
-      {bolts.map(({ name }) => (
-        <div key={name}>
-          <div>{name}</div>
-          <div>{description}</div>
-          <div>{price}</div>
-        </div>
-      ))}
+      <div className={classes.boltCadrPlaceWrap}>
+        {bolts.map(({ name, pic, description, price }) => (
+          <div key={name} className={classes.boltCadrPlaceCard}>
+            <div className={classes.boltCadrCardName}>{name}</div>
+            <div className={classes.boltCadrCardPic}>
+              <img className={classes.boltCadrCardPicPic} src={pic} alt="" />
+            </div>
+            <div className={classes.boltCadrCardDescript}>
+              <span>
+                <b>Описание: &nbsp;&nbsp;&nbsp;</b> {description}
+              </span>
+            </div>
+            <div className={classes.boltCadrCardPrice}>
+              <span>
+                <b>Цена:&nbsp;&nbsp;&nbsp; </b>
+                {price}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
