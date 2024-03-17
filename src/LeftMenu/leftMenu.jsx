@@ -61,36 +61,36 @@ export const LeftMenu = () => {
           <MenuItem
             title="Буры"
             items={[
-              { label: "Буры из Германии", to: "/about" },
-              { label: "Буры из Китая", to: "/about" },
-              { label: "Буры из России", to: "/about" },
+              { label: "Буры из Германии", to: `${ROUTES.burs}?type=1` },
+              { label: "Буры из Китая", to: `${ROUTES.burs}?type=2` },
+              { label: "Буры из России", to: `${ROUTES.burs}?type=3` },
             ]}
           />
 
           <MenuItem
             title="Сверла"
             items={[
-              { label: "Сверла по дереву", to: "/about" },
-              { label: "Сверла по металлу", to: "/about" },
-              { label: "Сверла с покрытием", to: "/about" },
+              { label: "Сверла по дереву", to: `${ROUTES.gaechs}?type=1` },
+              { label: "Сверла по металлу", to: `${ROUTES.gaechs}?type=2` },
+              { label: "Сверла с покрытием", to: `${ROUTES.gaechs}?type=3` },
             ]}
           />
 
           <MenuItem
             title="Отвертки"
             items={[
-              { label: "Отвертки длинные", to: "/about" },
-              { label: "Сотвертки короткие", to: "/about" },
-              { label: "Отвертки в наборе", to: "/about" },
+              { label: "Отвертки длинные", to: "/otvertks?type=1" },
+              { label: "Сотвертки короткие", to: "/otvertks?type=2" },
+              { label: "Отвертки в наборе", to: "/otvertks?type=3" },
             ]}
           />
 
           <MenuItem
             title="Гаечные ключи"
             items={[
-              { label: "Гаечные ключи накидные", to: "/about" },
-              { label: "Гаечные ключи рожковые", to: "/about" },
-              { label: "Гаечные ключи разводные", to: "/about" },
+              { label: "Гаечные ключи накидные", to: "/sverls?type=1" },
+              { label: "Гаечные ключи рожковые", to: "/sverls?type=2" },
+              { label: "Гаечные ключи разводные", to: "/sverts?type=3" },
             ]}
           />
         </div>
