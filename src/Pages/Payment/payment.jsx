@@ -20,6 +20,13 @@ export const Payment = () => {
   const [cardType, setCardType] = useState("");
   const [bankType, setBankType] = useState("");
   const [cardDigit, setCardDigit] = useState("");
+  const [formReset, setFormReset] = useState("");
+  const [enableBtn, setEnableBtn] = useState("");
+
+  const formResetFunc = (e) => {
+    e.preventDefault();
+    setValue("");
+  };
 
   return (
     <div className={classes.paymentWrap}>
@@ -46,7 +53,7 @@ export const Payment = () => {
             // console.log(valOfInput);
           }}
         >
-          <Form className={classes.paymentFormWrap}>
+          <Form className={classes.paymentFormWrap} name="paymentForm">
             <Field
               type="text"
               id="firstOctetCard"
@@ -88,10 +95,19 @@ export const Payment = () => {
               className={classes.paymentOctetErrorMessage}
             />
 
-            <button id="submitbtn" type="submit" className={classes.btnForm}>
+            <button
+              id="submitbtn"
+              type="submit"
+              disabled="disabled"
+              className={`${classes.btnForm} ${classes.disableEnable}`}
+            >
               Оплатить
             </button>
-            <button type="reset" className={classes.btnForm}>
+            <button
+              type="reset"
+              className={classes.btnForm}
+              onClick={formResetFunc}
+            >
               Сбросить
             </button>
           </Form>
