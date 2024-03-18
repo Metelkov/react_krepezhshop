@@ -1,5 +1,6 @@
 .imageWrap {
-  width: 800px;
+  /* width: 800px; */
+  width: 1200px;
   height: 400px;
   overflow: hidden;
   margin: 0 auto;
@@ -9,17 +10,18 @@
 .slider {
   animation: sliderAnimate infinite ease;
   animation-delay: -1s;
-  animation-duration: 15s;
+  animation-duration: 18s;
   animation-direction: alternate;
   animation-fill-mode: both;
-  width: 4000px;
+  /* width: 4000px; */
+  width: 8000px;
   height: 400px;
   clear: both;
   position: relative;
 }
 
 .imgSlid {
-  width: 800px;
+  width: 1200px;
   height: 600px;
 }
 
@@ -28,16 +30,16 @@
     margin-left: 0;
   }
   40% {
-    margin-left: -800px;
-    transform: rotate(4deg) translateX(0px) scale(1.4);
+    margin-left: -1200px;
+    transform: rotate(4deg) translateX(0px) scale(1.8);
   }
   60% {
-    margin-left: -1600px;
-  }
-  80% {
     margin-left: -2400px;
   }
+  80% {
+    margin-left: -3600px;
+  }
   100% {
-    margin-left: -3200px;
+    margin-left: -4800px;
   }
 }
