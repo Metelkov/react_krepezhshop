@@ -29,26 +29,35 @@ export const LeftMenu = () => {
           <MenuItem
             title="Анкера"
             items={[
-              { label: "Анкер из нержавейки", to: `${ROUTES.anckers}?type=1` },
-              { label: "Анкер оцинкованный", to: `${ROUTES.anckers}?type=2` },
+              {
+                label: "Анкер из нержавейки",
+                to: `${ROUTES.anckers}?type=nerzh`,
+              },
+              {
+                label: "Анкер оцинкованный",
+                to: `${ROUTES.anckers}?type=zink`,
+              },
             ]}
           />
 
           <MenuItem
             title="Винты"
             items={[
-              { label: "Винты под отвертку", to: `${ROUTES.vints}?type=1` },
-              { label: "Винты потайные", to: `${ROUTES.vints}?type=2` },
-              { label: "Винты торекс", to: `${ROUTES.vints}?type=3` },
+              {
+                label: "Винты под отвертку",
+                to: `${ROUTES.vints}?type=otvertk`,
+              },
+              { label: "Винты потайные", to: `${ROUTES.vints}?type=potay` },
+              { label: "Винты торекс", to: `${ROUTES.vints}?type=torx` },
             ]}
           />
 
           <MenuItem
             title="Гайки"
             items={[
-              { label: "Гайки с нейлоном", to: "/nuts?type=1" },
-              { label: "Гайки увеличенные", to: "/nuts?type=2" },
-              { label: "Гайки простые", to: "/nuts?type=3" },
+              { label: "Гайки с нейлоном", to: "/nuts?type=neylon" },
+              { label: "Гайки нерж сталь", to: "/nuts?type=nerzh" },
+              { label: "Гайки простые", to: "/nuts?type=prost" },
             ]}
           />
         </div>

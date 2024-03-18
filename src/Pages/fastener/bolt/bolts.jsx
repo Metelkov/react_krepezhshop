@@ -22,7 +22,7 @@ export const Bolts = () => {
       .finally(() => {
         setIsLoading(false);
       });
-  }, []);
+  }, [search]);
   if (isLoading)
     return (
       <div className={classes.loader}>
