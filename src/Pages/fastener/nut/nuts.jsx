@@ -40,7 +40,7 @@ export const Nuts = () => {
           <div key={name} className={classes.nutCadrPlaceCard}>
             <div className={classes.nutCadrCardName}>{name}</div>
             <div className={classes.nutCadrCardPic}>
-              <img className={classes.nuttCadrCardPicPic} src={pic} alt="" />
+              <img className={classes.nutCadrCardPicPic} src={pic} alt="" />
             </div>
             <div className={classes.nutCadrCardDescript}>
               <span>

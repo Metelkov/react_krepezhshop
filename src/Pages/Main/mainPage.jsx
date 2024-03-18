@@ -9,7 +9,6 @@ export const MainPage = () => {
     <div className={classes.mainPageWrapper}>
       <div className={classes.sliderSpot}>
         <SliderCss />
-        {/* <Loader /> */}
       </div>
       <div className={classes.cardPlace}>
         <div className={classes.cardPlaceLeft}></div>

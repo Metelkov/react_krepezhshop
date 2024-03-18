@@ -34,14 +34,14 @@ export const Anckers = () => {
 
   return (
     <div className={classes.anckerWrap}>
-      <div className={classes.ankerTitle}>
+      <div className={classes.anckerTitle}>
         <p>Анкера</p>
       </div>
-      <div className={classes.anckerCardPlaceWrap}>
+      <div className={classes.anckerCadrPlaceWrap}>
         {anckers.map(({ name, pic, description, price }) => (
           <div key={name} className={classes.anckerCadrPlaceCard}>
             <div className={classes.anckerCadrCardName}> {name} </div>
-            <div className={classes.boltCadrCardPic}>
+            <div className={classes.anckerCadrCardPic}>
               <img className={classes.anckerCadrCardPicPic} src={pic} alt="" />
             </div>
             <div className={classes.anckerCadrCardDescript}>
