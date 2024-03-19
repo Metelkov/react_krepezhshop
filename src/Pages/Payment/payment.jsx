@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import classes from "./styles.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { number, object } from "yup";
+import { number, object, string } from "yup";
 import { InputMask, useMask } from "@react-input/mask";
 import { calculateCardType } from "./cardWatch";
 import { calculateBank } from "./bankWatch";
 import { algorithmLun } from "./lun";
 
 const schema = object().shape({
-  firstOctetCard: number().default(undefined),
+  firstOctetCard: string()
+    .test({
+      name: "length",
+      message: "Минимум 16 цифр",
+      test: (value) => value.replaceAll(" ", "").length >= 16,
+    })
+    .test({
+      name: "min_digit",
+      message: "Проверьте корректность введенных данных",
+      test: algorithmLun,
+    })
+    // .length(16)
+    .default(""),
 });
 
 export const Payment = () => {
@@ -40,13 +52,14 @@ export const Payment = () => {
         <div className={classes.paymentCardInfoCredentals}>
           <span>{bankType}</span>
         </div>
-        <div className={classes.paymentCardInfoCredentals}>
+        {/* <div className={classes.paymentCardInfoCredentals}>
           <span>{cardDigit}</span>
-        </div>
+        </div> */}
       </div>
       <div className={classes.paymentFormikWrap}>
         <Formik
           validationSchema={schema}
+          validateOnBlur
           initialValues={schema.default()}
           className={classes.paymentFormicStyle}
           onSubmit={(valOfInput) => {
@@ -54,47 +67,51 @@ export const Payment = () => {
           }}
         >
           <Form className={classes.paymentFormWrap} name="paymentForm">
-            <Field
-              type="text"
-              id="firstOctetCard"
-              name="firstOctetCard"
-              className={classes.paymentOctet}
-            >
-              {({ field, form: { setError }, meta }) => {
-                return (
-                  <div>
-                    <input
-                      {...field}
-                      ref={inputRef}
-                      onChange={(e) => {
-                        const cardType = calculateCardType(e.target.value);
-                        setCardType(cardType);
+            {" "}
+            <div className={classes.paymentFormFieldWrap}>
+              <Field
+                type="text"
+                id="firstOctetCard"
+                name="firstOctetCard"
+                className={classes.paymentOctet}
+              >
+                {({ field, form: { setError }, meta }) => {
+                  return (
+                    <div>
+                      <input
+                        {...field}
+                        ref={inputRef}
+                        onChange={(e) => {
+                          const cardType = calculateCardType(e.target.value);
+                          setCardType(cardType);
 
-                        const bankType = calculateBank(e.target.value);
-                        setBankType(bankType);
+                          const bankType = calculateBank(e.target.value);
+                          setBankType(bankType);
 
-                        const cardDigit = algorithmLun(e.target.value);
-                        setCardDigit(cardDigit);
+                          field.onChange(e);
 
-                        //
-                        //
-                        //
-                      }}
-                      className={classes.inputForm}
-                    />
-                    {meta.touched && meta.error && (
+                          //const cardDigit = algorithmLun(e.target.value);
+                          //setCardDigit(cardDigit);
+
+                          //
+                          //
+                          //
+                        }}
+                        className={classes.inputForm}
+                      />
+                      {/* {meta.touched && meta.error && (
                       <div className="error">{meta.error}</div>
-                    )}
-                  </div>
-                );
-              }}
-            </Field>
-            <ErrorMessage
-              name="firstOctetCard"
-              component="div"
-              className={classes.paymentOctetErrorMessage}
-            />
-
+                    )} */}
+                    </div>
+                  );
+                }}
+              </Field>
+              <ErrorMessage
+                name="firstOctetCard"
+                component="div"
+                className={classes.paymentOctetErrorMessage}
+              />
+            </div>
             <button
               id="submitbtn"
               type="submit"
