@@ -70,38 +70,43 @@ export const LeftMenu = () => {
           <MenuItem
             title="Буры"
             items={[
-              { label: "Буры из Германии", to: `${ROUTES.burs}?type=1` },
-              { label: "Буры из Китая", to: `${ROUTES.burs}?type=2` },
-              { label: "Буры из России", to: `${ROUTES.burs}?type=3` },
+              { label: "Буры из Германии", to: `${ROUTES.burs}?type=gurger` },
+              { label: "Буры из Китая", to: `${ROUTES.burs}?type=burkit` },
+              { label: "Буры из России", to: `${ROUTES.burs}?type=burrus` },
             ]}
           />
 
           <MenuItem
             title="Сверла"
             items={[
-              { label: "Сверла по дереву", to: `${ROUTES.gaechs}?type=1` },
-              { label: "Сверла по металлу", to: `${ROUTES.gaechs}?type=2` },
-              { label: "Сверла с покрытием", to: `${ROUTES.gaechs}?type=3` },
+              {
+                label: "Сверла по дереву",
+                to: `${ROUTES.sverls}?type=sverlderev`,
+              },
+              {
+                label: "Сверла по металлу",
+                to: `${ROUTES.sverls}?type=sverlmetall`,
+              },
             ]}
           />
 
           <MenuItem
             title="Отвертки"
             items={[
-              { label: "Отвертки длинные", to: "/otvertks?type=1" },
-              { label: "Сотвертки короткие", to: "/otvertks?type=2" },
-              { label: "Отвертки в наборе", to: "/otvertks?type=3" },
+              { label: "Отвертки Ph", to: "/otvertki?type=otvertph" },
+              { label: "Отвертки простые", to: "/otvertki?type=otvertsimpl" },
+              { label: "Отвертки в наборе", to: "/otvertki?type=otvertnabor" },
             ]}
           />
 
-          <MenuItem
+          {/* <MenuItem
             title="Гаечные ключи"
             items={[
               { label: "Гаечные ключи накидные", to: "/sverls?type=1" },
               { label: "Гаечные ключи рожковые", to: "/sverls?type=2" },
               { label: "Гаечные ключи разводные", to: "/sverts?type=3" },
             ]}
-          />
+          /> */}
         </div>
       </div>
     </div>

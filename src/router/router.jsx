@@ -14,7 +14,7 @@ import { Nuts } from "../Pages/fastener/nut/nuts";
 import { Vints } from "../Pages/fastener/vint/vints";
 import { Burs } from "../Pages/tools/bur/burs";
 import { Gaechs } from "../Pages/tools/gaech/gaechs";
-import { Otvertks } from "../Pages/tools/otvertk/otvertks";
+import { Otvertki } from "../Pages/tools/otvertk/otvertks";
 import { Sverls } from "../Pages/tools/sverl/sverls";
 
 export const router = createBrowserRouter([
@@ -72,8 +72,8 @@ export const router = createBrowserRouter([
         element: <Gaechs />,
       },
       {
-        path: ROUTES.otvertks,
-        element: <Otvertks />,
+        path: ROUTES.otvertki,
+        element: <Otvertki />,
       },
       {
         path: ROUTES.sverls,
