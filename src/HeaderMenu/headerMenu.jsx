@@ -7,20 +7,6 @@ import Modal from "react-modal";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 export const HeaderMenu = () => {
-  const download = async () => {
-    console.log("asdasdsd");
-    const response = await fetch("../Pages/price/price.odt", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest",
-      },
-      credentials: "include",
-    });
-    const content = await response.json();
-    console.log(content);
-  };
-
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -94,16 +80,14 @@ export const HeaderMenu = () => {
       </div>
       <div className={` ${classes.headerMenuPrice} ${classes.headerMenuLink}`}>
         <p>
-          <a href="../Pages/price/price.odt" target="_blank">
+          <NavLink
+            to="https://krep-komp.ru/service/krep-komp_price.xlsx"
+            target="_blank"
+            download
+          >
             прайс-лист
-          </a>
+          </NavLink>
         </p>
-        {/* <a id="myLink" onclick="alert('link click');">LINK 1</a> */}
-        <a id="myLink" onClick={() => download()}>
-          {" "}
-          &nbsp;&nbsp;LINK___1{" "}
-        </a>
-        {/* <Link to="/price">прайс-лист</Link> */}
       </div>
       <div className={` ${classes.headerMenuPay} ${classes.headerMenuLink}`}>
         <NavLink to="/payment">оплата</NavLink>
