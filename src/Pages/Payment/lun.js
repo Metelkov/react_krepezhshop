@@ -36,6 +36,6 @@ export const algorithmLun = (value) => {
   oddSumm = oddSumm / 2;
   const lun = oddSumm + evenSumm;
 
-  if (lun % 10 !== 0) return "Проверьте правильность ввода номера карты";
-  else return false;
+  if (lun % 10 !== 0) return false;
+  else return true;
 };

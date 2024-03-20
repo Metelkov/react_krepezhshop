@@ -100,16 +100,12 @@ export const Payment = () => {
             <button
               id="submitbtn"
               type="submit"
-              disabled={enableBtn}
+              // disabled={enableBtn}
               className={`${classes.btnForm} ${classes.disableEnable}`}
             >
               Оплатить
             </button>
-            <button
-              type="reset"
-              className={classes.btnForm}
-              onClick={formResetFunc}
-            >
+            <button type="reset" className={classes.btnForm}>
               Сбросить
             </button>
           </Form>

@@ -9,7 +9,7 @@ export const Header = () => {
         <div className={classes.headLogoName}>Крепеж-инструмент</div>
       </div>
 
-      <div className={classes.headContentSearch}>
+      {/* <div className={classes.headContentSearch}>
         <div className={classes.headContentSearchInputBox}>
           <input
             type="search"
@@ -21,8 +21,8 @@ export const Header = () => {
         <div className={classes.headContentSearchButtonBox}>
           <button>поиск</button>
         </div>
-      </div>
-      <div className={classes.headCart}></div>
+      </div> */}
+      {/* <div className={classes.headCart}></div> */}
     </div>
   );
 };
