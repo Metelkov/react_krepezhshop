@@ -1,205 +1,157 @@
 @font-face {
-    font-family: "SofiaSans";
-    src: url("../Fonts/sofia_sans/static/SofiaSans-Black.ttf") format("truetype"); 
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "SofiaSans";
+  src: url("../Fonts/sofia_sans/static/SofiaSans-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SofiaSansMedium";
-    src: url("../Fonts/sofia_sans/static/SofiaSans-Medium.ttf") format("truetype"); 
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "SofiaSansMedium";
+  src: url("../Fonts/sofia_sans/static/SofiaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .leftMenuWrap {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
 
 .leftMenuUlTitle {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .leftMenuBlock {
-    width: 250px;
-    height: 500px;
-    background-color: bisque;
-    /* background-color: rgba(255, 195, 158, 1); */
-    /* background-color: rgba(251, 168, 114, 1); */
+  width: 250px;
+  height: 500px;
+  background-color: bisque;
 }
 
 .leftMenuToMainWrap {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    font-family: "SofiaSans";
-    font-size: 24px;
-    text-transform: uppercase;
-    color: rgba(250, 0, 0, 1);
-    justify-content: center;
-    background-color: rgba(27, 35, 41, 1);
-    margin: 2px 0 2px 0;
-    text-decoration: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-family: "SofiaSans";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgba(250, 0, 0, 1);
+  justify-content: center;
+  background-color: rgba(27, 35, 41, 1);
+  margin: 2px 0 2px 0;
+  text-decoration: none;
 }
 
 ul {
-    margin: 4px 4px 4px 0;
+  margin: 4px 4px 4px 0;
 }
 
 li {
-    margin: 5px 0 0 -25px;
-    /* border: 1px double bisque; */
-    width: 250px;
-    /* background-color: rgba(169, 169, 169, 0.9); */
+  margin: 5px 0 0 -25px;
+  width: 250px;
 }
 
-.leftMenuToMainWrap a{
-    cursor: pointer;
-    text-decoration: none;
-    color: rgba(250, 0, 0, 1);
+.leftMenuToMainWrap a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(250, 0, 0, 1);
 }
 
 .leftMenuToMainLink {
-    cursor: pointer;
-    text-decoration: none;
-    color: rgba(250, 250, 250, 1);
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(250, 250, 250, 1);
 }
 
 .leftMenuLinkShift {
-    display: flex;
-    width: 250px;
+  display: flex;
+  width: 250px;
 }
 
 .leftMenuFasterer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 35px;
-    background-color: rgba(27, 35, 41, 1);
-    color: rgba(250, 250, 250, 1);
-    font-family: "SofiaSans";
-    font-size: 18px;
-    text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(27, 35, 41, 1);
+  color: rgba(250, 250, 250, 1);
+  font-family: "SofiaSans";
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
-
-
-/* .lleftMenuWrapUl {
-    width: 100%;
-} */
-
-
-a a:visited a:active{
-    color: rgba(250, 250, 250, 1);    
+a a:visited a:active {
+  color: rgba(250, 250, 250, 1);
 }
 
 .lleftMenuWrap {
-    display: flex;
-    list-style-type: none;
-    font-family: "SofiaSans";
-    font-size: 20px;
-    background-color: rgba(27, 35, 41, 1);
-    width: 90%;
-    height: 22x;
-    padding: 4px 4px 4px 4px;
-    color: rgba(250, 0, 0, 1);
-
+  display: flex;
+  list-style-type: none;
+  font-family: "SofiaSans";
+  font-size: 20px;
+  background-color: rgba(27, 35, 41, 1);
+  width: 90%;
+  height: 22x;
+  padding: 4px 4px 4px 4px;
+  color: rgba(250, 0, 0, 1);
 }
 
-.lleftMenuWrap a:visited{
-    color: rgba(250, 250, 250, 1);
-    text-decoration: none;
+.lleftMenuWrap a:visited {
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
 }
 
-.lleftMenuWrap a:active{
-    color: rgba(250, 250, 250, 1);
-    text-decoration: none;
+.lleftMenuWrap a:active {
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
 }
 
-.lleftMenuWrap a{
-    color: rgba(250, 250, 250, 1);
-    text-decoration: none;
+.lleftMenuWrap a {
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
 }
 
-
-
-.lleftMenuWrap :hover .leftMenuMenuSrcondListLi{
-    color: antiquewhite;
-    display:block; 
+.lleftMenuWrap :hover .leftMenuMenuSrcondListLi {
+  color: antiquewhite;
+  display: block;
 }
 
 .leftMenuMenuSrcondListLi {
-    font-family: "SofiaSansMedium";
-    font-size: 17px;
-    width: 230px;
-    /* height: 35px; */
-    /* padding: 4px 4px 4px 4px;
-    /* margin: 2px 2px 2px -20px; */
-    background-color: rgba(27, 35, 41, 1);
-    /* text-transform: capitalize; */
-    list-style-type: none;
-    color: rgba(250, 0, 0, 1);
-    display: none;
-    position: absolute;
-    z-index: 1;
-    margin-left: 20px;
-    border: 1px solid bisque;
+  font-family: "SofiaSansMedium";
+  font-size: 17px;
+  width: 230px;
+  background-color: rgba(27, 35, 41, 1);
+  /* text-transform: capitalize; */
+  list-style-type: none;
+  color: rgba(250, 0, 0, 1);
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
+  border: 1px solid bisque;
 }
 
-
-/* .leftMenuFastenerMenuMainList { */
-    /* margin-left: auto; */
-    /* font-family: "SofiaSans";
-    font-size: 20px;
-} */
-/* 
-.leftMenuFastenerMenuFirstListLi {
-    display: flex;
-    list-style-type: none;
-    font-family: "SofiaSans";
-    font-size: 22px;
-    background-color: rgba(27, 35, 41, 1);
-    width: 90%;
-    height: 22x;
-    padding: 4px 4px 4px 4px;
-    border: 1px solid blue;
-} */
-
-/* .leftMenuFastenerMenuFirstListLi :hover .leftMenuMenuSrcondListLi {
-    display: block;
-    color: cadetblue;
-} */
-
-/* .leftMenuFastenerMenuSecondListUl {
-    list-style-type: none;
-} */
-
-
 .leftMenuTool {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 35px;
-    background-color: rgba(27, 35, 41, 1);
-    color: rgba(250, 250, 250, 1);
-    font-family: "SofiaSans";
-    font-size: 18px;
-    text-transform: uppercase;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(27, 35, 41, 1);
+  color: rgba(250, 250, 250, 1);
+  font-family: "SofiaSans";
+  font-size: 18px;
+  text-transform: uppercase;
+  justify-content: center;
 }
 
 .leftMenuToolMenu {
-    font-family: "SofiaSans";
-    font-size: 20px;
-    /* text-transform: uppercase; */
-    /* color: rgba(250, 0, 0, 1); */
+  font-family: "SofiaSans";
+  font-size: 20px;
 }

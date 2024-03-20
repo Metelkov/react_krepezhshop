@@ -5,8 +5,6 @@ import { aboutPageCard } from "../about/const_about";
 export const AboutPage = () => {
   return (
     <div className={classes.aboutPageWrapper}>
-      {/* <div className={classes.aboutPageTopIndent}>
-            </div> */}
       <div className={classes.aboutPageCenter}>
         <div className={classes.aboutPageCenterHeaderText}>
           <p>О компании</p>

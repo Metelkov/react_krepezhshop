@@ -52,9 +52,6 @@ export const Payment = () => {
         <div className={classes.paymentCardInfoCredentals}>
           <span>{bankType}</span>
         </div>
-        {/* <div className={classes.paymentCardInfoCredentals}>
-          <span>{cardDigit}</span>
-        </div> */}
       </div>
       <div className={classes.paymentFormikWrap}>
         <Formik
@@ -62,9 +59,7 @@ export const Payment = () => {
           validateOnBlur
           initialValues={schema.default()}
           className={classes.paymentFormicStyle}
-          onSubmit={(valOfInput) => {
-            // console.log(valOfInput);
-          }}
+          onSubmit={(valOfInput) => {}}
         >
           <Form className={classes.paymentFormWrap} name="paymentForm">
             {" "}
@@ -89,19 +84,9 @@ export const Payment = () => {
                           setBankType(bankType);
 
                           field.onChange(e);
-
-                          //const cardDigit = algorithmLun(e.target.value);
-                          //setCardDigit(cardDigit);
-
-                          //
-                          //
-                          //
                         }}
                         className={classes.inputForm}
                       />
-                      {/* {meta.touched && meta.error && (
-                      <div className="error">{meta.error}</div>
-                    )} */}
                     </div>
                   );
                 }}

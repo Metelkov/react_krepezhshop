@@ -16,11 +16,6 @@
   font-display: swap;
 }
 
-/* #root {
-    height: 100%;
-    width: 100%;
-} */
-
 .paymentWrap {
   display: flex;
   flex-direction: column;

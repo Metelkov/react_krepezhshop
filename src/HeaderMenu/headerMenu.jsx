@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "../HeaderMenu/styles.module.css";
-import { NavLink } from "react-router-dom";
-// import { price } from "../Pages/price/price.odt"
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import Modal from "react-modal";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -80,13 +79,13 @@ export const HeaderMenu = () => {
       </div>
       <div className={` ${classes.headerMenuPrice} ${classes.headerMenuLink}`}>
         <p>
-          <NavLink
+          <Link
             to="https://krep-komp.ru/service/krep-komp_price.xlsx"
             target="_blank"
             download
           >
             прайс-лист
-          </NavLink>
+          </Link>
         </p>
       </div>
       <div className={` ${classes.headerMenuPay} ${classes.headerMenuLink}`}>
