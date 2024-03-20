@@ -33,8 +33,14 @@ export const algorithmLun = (value) => {
     }
     oddSumm += arrOdd[k];
   }
-  oddSumm = oddSumm / 2;
+
+  // console.log("arrall = " + arrAll);
+  // console.log("eventsumm = " + evenSumm);
+  // console.log("arrodd = " + arrOdd);
+  // console.log("oddsumm = " + oddSumm);
+
   const lun = oddSumm + evenSumm;
+  console.log(lun);
 
   if (lun % 10 !== 0) return false;
   else return true;
