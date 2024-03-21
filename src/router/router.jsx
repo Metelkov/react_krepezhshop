@@ -17,7 +17,9 @@ import { Gaechs } from "../Pages/tools/gaech/gaechs";
 import { Otvertki } from "../Pages/tools/otvertk/otvertks";
 import { Sverls } from "../Pages/tools/sverl/sverls";
 
-export const router = createBrowserRouter([
+// export const router = createBrowserRouter([
+//из-за раскатки на ГХ сменили роутинг
+export const router = createHashRouter([
   {
     path: ROUTES.Root,
     element: <Root />,
