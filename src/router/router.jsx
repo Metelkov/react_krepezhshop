@@ -18,9 +18,9 @@ import { Otvertki } from "../Pages/tools/otvertk/otvertks";
 import { Sverls } from "../Pages/tools/sverl/sverls";
 import { createHashRouter } from "react-router-dom";
 
-// export const router = createBrowserRouter([
-//из-за раскатки на ГХ сменили роутинг
-export const router = createHashRouter([
+export const router = createBrowserRouter([
+  //из-за раскатки на ГХ сменили роутинг
+  // export const router = createHashRouter([
   {
     path: ROUTES.Root,
     element: <Root />,
